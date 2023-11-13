@@ -12,6 +12,7 @@ export default function Home() {
       <div className='bg-gradient-to-r from-black via-[#1c6d7e33] to-black'>
         <About />
         <Services />
+        <hr className='mx-[9%] mt-12 border-[#666]'/>
         <Portfolio />
         <Info />
         <Testimonials />
