@@ -56,7 +56,7 @@ const ServicesTab = () => {
                 </div>
 
                 <img
-                    className="rounded-md"
+                    className="rounded-md h-full w-[50%]"
                     src={service_tab_items[index].image}
                     alt={service_tab_items[index].topic}
                 />
