@@ -73,4 +73,18 @@ export const portfolio_projects = [
         description: "UK and Ireland fire door teams rely on Joinery Fire \
         Door Software for faster, cost-effective results."
     },
+    {
+        title: "Fire Door",
+        image: '/sample.png',
+        link: 'https://github.com/SunX-1224',
+        description: "UK and Ireland fire door teams rely on Joinery Fire \
+        Door Software for faster, cost-effective results."
+    },
+    {
+        title: "Fire Door",
+        image: '/sample.png',
+        link: 'https://github.com/SunX-1224',
+        description: "UK and Ireland fire door teams rely on Joinery Fire \
+        Door Software for faster, cost-effective results."
+    },
 ];

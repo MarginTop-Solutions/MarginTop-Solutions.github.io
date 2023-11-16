@@ -52,3 +52,7 @@ body {
   border-radius: 8px;
   background-color: rgba(240, 248, 255, 0.866);
 }
+
+*::-webkit-scrollbar {
+  display: none;
+}

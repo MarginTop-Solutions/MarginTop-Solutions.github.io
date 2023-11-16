@@ -3,7 +3,7 @@ import { NavBar, Hero, About, Services, Contact, Portfolio, Info, Tools, Testimo
 
 export default function Home() {
   return (
-    <>
+    <main>
       <img className='absolute top-0 z-[-1] w-screen h-screen' src='/herobg.png' alt='background' />
       <div className='min-h-screen py-12'>
         <NavBar />
@@ -21,6 +21,6 @@ export default function Home() {
       <Tools />
       <Industries />
       <Footer />
-    </>
+    </main>
   )
 }
