@@ -1,11 +1,17 @@
 import { Typography } from "@mui/material";
 import { portfolio_projects } from "@/constants";
 import Link from "next/link";
+import { useState } from "react";
+import { ArrowLeft, ArrowRight, Circle } from "lucide-react";
 
-const ProjectCard = ({ proj }) => (
-    <div className="relative rounded-xl min-w-[40%] mx-4 overflow-hidden">
+const SideCard = ({ proj }) => (
+    <img src={proj.image} alt={proj.title} className="rounded-xl w-[20%] " />
+)
+
+const FocusedCard = ({ proj }) => (
+    <div className="relative rounded-xl min-w-[50%] overflow-hidden">
         <img src={proj.image} alt={proj.title} className="absolute rounded-xl z-[-1] w-full" />
-        <div className="relative flex flex-col gap-8 w-2/5 bg-[#012a2abb] px-12 py-8 backdrop-blur">
+        <div className="relative flex flex-col gap-16 w-2/5 bg-[#012a2abb] px-12 py-16 backdrop-blur">
             <Typography variant="h4" fontWeight={600} >{proj.title}</Typography>
             <Typography variant="h6" >{proj.description}</Typography>
             <Link
@@ -18,29 +24,42 @@ const ProjectCard = ({ proj }) => (
     </div>
 )
 
-const ProjectsView = () => {
-    //  TODO : content is not overflowing here. so to prevent issues flex is set col for now..
-    return (
-        <div className="flex gap-8 items-center overflow-auto">
-            {portfolio_projects.map((proj, i) => (
-                <ProjectCard key={i} proj={proj} />
-            ))}
-        </div>
-    );
-}
-
-const Portfolio = () => (
-    <div className="mt-12 flex flex-col items-center" id="portfolio">
-        <Typography variant="h6">PORTFOLIO</Typography>
-        <Typography variant="h2" fontWeight={700}>They trusted Us</Typography>
-        <Typography variant="h6" className="mx-[16%] text-center">
-            We have extensive experience in designing and developing custom software development
-            projects that can create brand awareness for your platform
-        </Typography>
-
-        <ProjectsView />
-
+const ProjectsView = ({ focusedIndex }) => (
+    <div className="flex justify-around items-center">
+        <SideCard proj={portfolio_projects[(focusedIndex - 1 + portfolio_projects.length) % portfolio_projects.length]} />
+        <FocusedCard proj={portfolio_projects[focusedIndex]} />
+        <SideCard proj={portfolio_projects[(focusedIndex + 1) % portfolio_projects.length]} />
     </div>
 );
+
+const Portfolio = () => {
+    const [focusedIndex, setFocusedIndex] = useState(0);
+
+    const handleScroll = (direction) => {
+        setFocusedIndex((focusedIndex + direction + portfolio_projects.length) % portfolio_projects.length);
+    };
+
+    return (
+        <div className="mt-12 flex flex-col gap-4 items-center" id="portfolio">
+            <Typography variant="h6">PORTFOLIO</Typography>
+            <Typography variant="h2" fontWeight={700}>They trusted Us</Typography>
+            <Typography variant="h6" className="mx-[16%] text-center">
+                We have extensive experience in designing and developing custom software development
+                projects that can create brand awareness for your platform. {focusedIndex}
+            </Typography>
+
+            <ProjectsView focusedIndex={focusedIndex} />
+            <div className="flex flex-row items-center gap-2 py-4 px-6 mt-4">
+                <ArrowLeft onClick={() => handleScroll(-1)} />
+                <Circle strokeWidth={1} />
+                <Circle strokeWidth={1} />
+                <Circle strokeWidth={4} />
+                <Circle strokeWidth={1} />
+                <ArrowRight onClick={() => handleScroll(1)} />
+            </div>
+
+        </div>
+    )
+};
 
 export default Portfolio;
