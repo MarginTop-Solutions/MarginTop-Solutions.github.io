@@ -5,7 +5,10 @@ import { ArrowRight, Box, Code2, InfinityIcon, Landmark, Lightbulb } from "lucid
 const InfoCard = () => (
     <div className="flex flex-row gap-12 px-16">
         <div className="flex flex-col justify-around px-6 py-4">
-            <Typography variant="h3" fontWeight={700}>Artificial Intelligence</Typography>
+            <div className="flex flex-row gap-2">
+                <div className="bg-white w-[6px]"/>
+                <Typography variant="h3" fontWeight={700}>Artificial Intelligence</Typography>
+            </div>
             <Typography variant="body1">
                 Metaverse development refers to the creation of a shared
                 virtual space that allows users to interact with each other and with digital objects in real-time.
@@ -49,8 +52,8 @@ const Info = () => {
 
     return (
         <div className="flex flex-row justify-center items-center mt-12 mx-16">
-            <InfoCard/>
-            <ArrowRight className="bg-[#2a2a2a] hover:bg-[#3a3a3a] w-12 h-12 p-2" />
+            <InfoCard />
+            <ArrowRight className="bg-[#2a2a2a] hover:bg-[#3a3a3a] hover:cursor-pointer w-12 h-12 p-2" />
         </div>
     )
 };

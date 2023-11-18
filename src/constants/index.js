@@ -88,3 +88,53 @@ export const portfolio_projects = [
         Door Software for faster, cost-effective results."
     },
 ];
+
+export const testimonials = [
+    {
+        name: 'Jon Snow',
+        title: 'CEO/Founder',
+        profile: '/randomperson.png',
+        feedback: 'Ordered my first mobile app development \
+        to ITSoft Solutions.I was inexperienced \
+        contractor but they carefully listened to \
+        my request and try to deliver the best \
+        quality of service.'
+    },
+    {
+        name: 'Tony Stark',
+        title: 'CEO/Founder',
+        profile: '/dedman.jpeg',
+        feedback: 'We possess years of expertise in developing fully-customized \
+        web designing and development solutions. Our team of dedicated developers (a.k.a. The Avengers) \
+        has managed to set the target.'
+    },
+    {
+        name: 'Hank Pym',
+        title: 'CEO (Pym Tech)',
+        profile: '/nothankpym.jpg',
+        feedback: 'Ordered my first mobile app development \
+        to ITSoft Solutions.I was inexperienced \
+        contractor but they carefully listened to \
+        my request and try to deliver the best \
+        quality of service.'
+    },
+    {
+        name: 'Iron Man',
+        title: 'Dead Man',
+        profile: '/dedman.jpeg',
+        feedback: 'In creating a solid product, Plex Bit Infosystems \
+        has been our dependable ally and collaborator here in Stark Industries. Since they began \
+        working with us, they have completed this project on schedule and \
+        within their projected budget.'
+    },
+    {
+        name: 'Jon Snow',
+        title: 'King in the North',
+        profile: '/randomperson.png',
+        feedback: 'Ordered my first mobile app development \
+        to ITSoft Solutions.I was inexperienced \
+        contractor but they carefully listened to \
+        my request and try to deliver the best \
+        quality of service.'
+    },
+];
