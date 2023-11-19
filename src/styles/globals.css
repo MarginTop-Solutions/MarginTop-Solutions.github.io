@@ -2,19 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  --foreground: #000;
-  --background-start: #a6a6a6;
-  --background-end: #e6e6e6;
+  --foreground: #fff;
+  --background-start: #050e11;
+  --background-end: #011a2a;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground: #fff;
-    --background-start: #050e11;
-    --background-end: #011a2a;
-  }
-}
 
 @layer utilities {
   .text-stroke-white {
@@ -37,13 +31,15 @@
     -webkit-background-clip: text;
     color: transparent;
   }
+
+  .gradient-bg {
+    background: linear-gradient(to bottom, #1c6d7e, #191036);
+  }
 }
 
 body {
   color: var(--foreground);
-  background: linear-gradient(to bottom,
-      transparent,
-      var(--background-end)) var(--background-start);
+  background: linear-gradient(to bottom, transparent, var(--background-end)), var(--background-start);
 }
 
 /*for debugging the layout*/

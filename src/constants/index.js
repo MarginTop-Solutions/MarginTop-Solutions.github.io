@@ -138,3 +138,38 @@ export const testimonials = [
         quality of service.'
     },
 ];
+
+export const tools = ["/mysql.png", "/js.png", "/php.png", "/react.png", "/css.png", "/wordpress.png"]
+
+export const industries = [
+    {
+        title: "Education & e-learning",
+        image: "/industry1.png",
+        description: "We contribute to various fields in education and e-Learning by leveraging our expertise in technology.",
+        topics: ["EdTech", "e-Portfolios", "Communication Platforms"]
+    },
+    {
+        title: "On Demand",
+        image: "/industry1.png",
+        description: "We create different projects on demand by leveraging our expertise in technology.",
+        topics: ["EdTech", "e-Portfolios", "Communication Platforms"]
+    },
+    {
+        title: "Fashion",
+        image: "/industry1.png",
+        description: "We contribute to various fields in fashion by leveraging our expertise in technology.",
+        topics: ["EdTech", "e-Portfolios", "Communication Platforms"]
+    },
+    {
+        title: "Travel & Tourism",
+        image: "/industry1.png",
+        description: "We contribute to various fields in travel and tourism by leveraging our expertise in technology.",
+        topics: ["EdTech", "e-Portfolios", "Communication Platforms"]
+    },
+    {
+        title: "Food & Drink",
+        image: "/industry1.png",
+        description: "We contribute to various fields in food and drink by leveraging our expertise in technology.",
+        topics: ["EdTech", "e-Portfolios", "Communication Platforms"]
+    },
+];

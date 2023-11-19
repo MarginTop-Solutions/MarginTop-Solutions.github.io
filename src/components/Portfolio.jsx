@@ -4,8 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { ArrowLeft, ArrowRight, Circle } from "lucide-react";
 
-const SideCard = ({ proj }) => (
-    <img src={proj.image} alt={proj.title} className="rounded-xl w-[20%] " />
+const SideCard = ({ proj, onClick }) => (
+    <img src={proj.image} alt={proj.title} className="rounded-xl w-[20%]" onClick={onClick} />
 )
 
 const FocusedCard = ({ proj }) => (
@@ -24,11 +24,17 @@ const FocusedCard = ({ proj }) => (
     </div>
 )
 
-const ProjectsView = ({ focusedIndex }) => (
+const ProjectsView = ({ focusedIndex, handleScroll }) => (
     <div className="flex justify-around items-center">
-        <SideCard proj={portfolio_projects[(focusedIndex - 1 + portfolio_projects.length) % portfolio_projects.length]} />
+        <SideCard
+            proj={portfolio_projects[(focusedIndex - 1 + portfolio_projects.length) % portfolio_projects.length]}
+            onClick={() => handleScroll(-1)}
+        />
         <FocusedCard proj={portfolio_projects[focusedIndex]} />
-        <SideCard proj={portfolio_projects[(focusedIndex + 1) % portfolio_projects.length]} />
+        <SideCard
+            proj={portfolio_projects[(focusedIndex + 1) % portfolio_projects.length]}
+            onClick={() => handleScroll(1)}
+        />
     </div>
 );
 
@@ -45,10 +51,10 @@ const Portfolio = () => {
             <Typography variant="h2" fontWeight={700}>They trusted Us</Typography>
             <Typography variant="h6" className="mx-[16%] text-center">
                 We have extensive experience in designing and developing custom software development
-                projects that can create brand awareness for your platform. {focusedIndex}
+                projects that can create brand awareness for your platform.
             </Typography>
 
-            <ProjectsView focusedIndex={focusedIndex} />
+            <ProjectsView focusedIndex={focusedIndex} handleScroll={handleScroll} />
             <div className="flex flex-row items-center gap-2 py-4 px-6 mt-4">
                 <ArrowLeft onClick={() => handleScroll(-1)} />
                 <Circle strokeWidth={1} />

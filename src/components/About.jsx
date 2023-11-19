@@ -10,7 +10,7 @@ const About = () => (
             <Typography variant='h3' className="font-bold">Our Challenge</Typography>
             <Typography variant="h4">is our progress</Typography>
             <Link
-                to={'tools'}
+                to={'contact'}
                 spy={true}
                 smooth={true}
                 offset={-200}
