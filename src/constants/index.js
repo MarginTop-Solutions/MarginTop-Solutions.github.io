@@ -8,6 +8,8 @@ export const nav_items = [
     { label: 'Contact Us', link: 'contact' }
 ];
 
+export const making = ["ANDROID_APPS", "WEB_APPS", "GRAPHICS", "APIs"]
+
 export const service_tab_items = [
     {
         topic: "Web Development",

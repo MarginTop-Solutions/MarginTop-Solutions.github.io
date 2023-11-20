@@ -6,7 +6,7 @@ const Footer = () => (
         <img src="/footer.png" alt="footer wave" className="absolute top-0 right-0 h-full" />
         <img src="/footer.png" alt="footer wave" className="absolute top-0 left-0 h-full scale-x-[-1]" />
 
-        <img src='/margintopBigLogo.svg' alt="logo" />
+        <img src='/margintopBigLogo.svg' alt="logo" className="h-80"/>
 
         <div className="flex flex-row gap-4">
             <Facebook width={32} height={32} className="fill-white" />

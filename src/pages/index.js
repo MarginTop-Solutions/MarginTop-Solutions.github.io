@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main>
       <img className='absolute top-0 z-[-1] w-screen h-screen' src='/herobg.png' alt='background' />
-      <div className='min-h-screen py-12'>
+      <div className='min-h-screen'>
         <NavBar />
         <Hero />
       </div>

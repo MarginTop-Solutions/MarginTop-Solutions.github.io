@@ -6,9 +6,9 @@ import { styles } from "@/styles/styles";
 
 const NavBar = () => (
     <div className="flex flex-row justify-between">
-        <img src='/margintoplogo.svg' alt="logo" />
+        <img src='/margintoplogo.svg' alt="logo" className="w-64"/>
 
-        <div className="flex flex-row justify-between my-auto gap-16 items-center">
+        <div className="flex flex-row justify-between my-auto items-center w-1/2">
             {nav_items.map(({ label, link }) => (
 
                 <Link
