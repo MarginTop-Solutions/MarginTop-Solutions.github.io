@@ -10,7 +10,6 @@ const Hero = () => {
     const [curIndex, setCurIndex] = useState(0);
 
     useEffect(() => {
-        console.log("Effect is running");
         const timeout = setTimeout(() => setCurIndex((i) => (i + 1) % making.length), 5000);
 
         return () => clearTimeout(timeout);

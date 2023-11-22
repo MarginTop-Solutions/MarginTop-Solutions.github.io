@@ -23,6 +23,7 @@ const Industries = () => {
                 <div className="flex-1 flex flex-col gap-4 justify-between">
                     {industries.map((field, i) => (
                         <button
+                            key={i}
                             className={`text-2xl font-medium border-2 border-white rounded-lg px-12 py-6 ${i === currentIndex ? "bg-[#bbb] text-secondary font-medium" : ""}`}
                             onClick={() => setCurrentIndex(i)}
                         >

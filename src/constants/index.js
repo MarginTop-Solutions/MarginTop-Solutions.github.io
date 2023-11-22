@@ -94,75 +94,77 @@ export const portfolio_projects = [
 export const infos = [
     {
         title: "Artificial Intelligence",
+        description:
+            "Artificial Intelligence (AI) is a branch of computer science that aims to create machines capable of intelligent behavior. This involves the development of algorithms and models that enable computers to perform tasks that typically require human intelligence. AI technologies include machine learning, natural language processing, computer vision, and more.",
         topics: [
             {
                 title: "Metaverse Development",
-                description: "Metaverse development refers to the creation of a shared \
-                virtual space that allows users to interact with each other and with digital objects in real-time."
+                description:
+                    "Metaverse development refers to the creation of a shared virtual space that allows users to interact with each other and with digital objects in real-time.",
             },
             {
                 title: "NFT Marketplace Development",
-                description: "NFT Marketplace Development involves building platforms that enable the buying, \
-                selling, and trading of digital assets as non-fungible tokens (NFTs). These tokens represent unique \
-                digital or real-world items and are often used in the context of digital art, collectibles, and gaming."
+                description:
+                    "NFT Marketplace Development involves building platforms that enable the buying, selling, and trading of digital assets as non-fungible tokens (NFTs). These tokens represent unique digital or real-world items and are often used in the context of digital art, collectibles, and gaming.",
             },
             {
                 title: "Dapp Development",
-                description: "Dapp Development, short for decentralized application development, focuses on creating \
-                applications that run on blockchain networks. These applications leverage the decentralized and secure nature \
-                of blockchain technology, providing users with increased transparency and control over their data."
+                description:
+                    "Dapp Development, short for decentralized application development, focuses on creating applications that run on blockchain networks. These applications leverage the decentralized and secure nature of blockchain technology, providing users with increased transparency and control over their data.",
             },
             {
                 title: "Smart Contract Development",
-                description: "Smart Contract Development involves coding self-executing contracts with predefined rules and \
-                conditions. These contracts run on blockchain platforms, automating and enforcing the execution of agreements, \
-                often used in various decentralized applications and blockchain ecosystems."
+                description:
+                    "Smart Contract Development involves coding self-executing contracts with predefined rules and conditions. These contracts run on blockchain platforms, automating and enforcing the execution of agreements, often used in various decentralized applications and blockchain ecosystems.",
             },
-        ]
+        ],
     },
     {
         title: "Web Development",
+        description:
+            "Web Development encompasses the creation and maintenance of websites and web applications. It involves both frontend and backend development, including the design of user interfaces, the implementation of server-side logic, and the management of databases. Various technologies and frameworks are utilized to ensure responsive, interactive, and efficient web solutions.",
         topics: [
             {
                 title: "Responsive Web Design",
-                description: "Responsive web design is an approach to design and development that ensures web applications \
-                and websites provide an optimal viewing and interaction experience across a wide range of devices and screen sizes."
+                description:
+                    "Responsive web design is an approach to design and development that ensures web applications and websites provide an optimal viewing and interaction experience across a wide range of devices and screen sizes.",
             },
             {
                 title: "Frontend Frameworks",
-                description: "Frontend frameworks, such as React, Angular, and Vue.js, are tools that facilitate the development \
-                of interactive and dynamic user interfaces for web applications. They provide reusable components and help manage \
-                state and data flow efficiently."
+                description:
+                    "Frontend frameworks, such as React, Angular, and Vue.js, are tools that facilitate the development of interactive and dynamic user interfaces for web applications. They provide reusable components and help manage state and data flow efficiently.",
             },
             {
                 title: "Backend Development",
-                description: "Backend development involves building the server-side logic and databases that enable the functionality \
-                of web applications. Common backend languages include Node.js, Python, Ruby, and Java, and databases like MySQL, MongoDB, \
-                and PostgreSQL are often used."
+                description:
+                    "Backend development involves building the server-side logic and databases that enable the functionality of web applications. Common backend languages include Node.js, Python, Ruby, and Java, and databases like MySQL, MongoDB, and PostgreSQL are often used.",
             },
-        ]
+        ],
     },
     {
         title: "Android App Development",
+        description:
+            "Android App Development focuses on creating mobile applications for the Android platform. It involves designing user interfaces, implementing functionality, and ensuring a seamless user experience. Developers use languages like Java or Kotlin and leverage frameworks like Flutter and React Native for cross-platform development.",
         topics: [
             {
                 title: "Native App Development",
-                description: "Native app development involves creating mobile applications specifically for the Android platform, \
-                using programming languages like Java or Kotlin. Native apps offer high performance and seamless integration with the device."
+                description:
+                    "Native app development involves creating mobile applications specifically for the Android platform, using programming languages like Java or Kotlin. Native apps offer high performance and seamless integration with the device.",
             },
             {
                 title: "Cross-Platform Development",
-                description: "Cross-platform development allows the creation of mobile apps that can run on multiple platforms, \
-                including Android and iOS. Frameworks such as Flutter and React Native enable developers to write code once and deploy it across platforms."
+                description:
+                    "Cross-platform development allows the creation of mobile apps that can run on multiple platforms, including Android and iOS. Frameworks such as Flutter and React Native enable developers to write code once and deploy it across platforms.",
             },
             {
                 title: "App Security",
-                description: "App security is a critical aspect of Android app development, involving practices such as secure coding, \
-                data encryption, and secure authentication to protect user data and prevent unauthorized access or malicious activities."
+                description:
+                    "App security is a critical aspect of Android app development, involving practices such as secure coding, data encryption, and secure authentication to protect user data and prevent unauthorized access or malicious activities.",
             },
-        ]
-    }
+        ],
+    },
 ];
+
 
 
 export const testimonials = [
