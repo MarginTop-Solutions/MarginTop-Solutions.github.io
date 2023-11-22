@@ -57,10 +57,7 @@ const Portfolio = () => {
             <ProjectsView focusedIndex={focusedIndex} handleScroll={handleScroll} />
             <div className="flex flex-row items-center gap-2 py-4 px-6 mt-4">
                 <ArrowLeft onClick={() => handleScroll(-1)} />
-                <Circle strokeWidth={1} />
-                <Circle strokeWidth={1} />
-                <Circle strokeWidth={4} />
-                <Circle strokeWidth={1} />
+                {portfolio_projects.map((_, i) => <Circle strokeWidth={i === focusedIndex ? 4 : 1} />)}
                 <ArrowRight onClick={() => handleScroll(1)} />
             </div>
 

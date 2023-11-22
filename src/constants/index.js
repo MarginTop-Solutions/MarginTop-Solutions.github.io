@@ -55,39 +55,34 @@ export const service_tab_items = [
 
 export const portfolio_projects = [
     {
-        title: "Fire Door",
+        title: "Social Media Dashboard",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "UK and Ireland fire door teams rely on Joinery Fire \
-        Door Software for faster, cost-effective results."
+        description: "A social media dashboard application that allows users to manage and analyze their social media accounts in one central hub. Built using React and Redux for state management.",
     },
     {
-        title: "Fire Door",
+        title: "Expense Tracker",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "UK and Ireland fire door teams rely on Joinery Fire \
-        Door Software for faster, cost-effective results."
+        description: "An expense tracker application that helps users manage their finances by tracking income, expenses, and providing insights into spending patterns. Developed with React and Firebase.",
     },
     {
-        title: "Fire Door",
+        title: "Fitness Tracker App",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "UK and Ireland fire door teams rely on Joinery Fire \
-        Door Software for faster, cost-effective results."
+        description: "A fitness tracking application that allows users to log their workouts, set fitness goals, and monitor their progress over time. Built using React Native for cross-platform compatibility.",
     },
     {
-        title: "Fire Door",
+        title: "Recipe Sharing Platform",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "UK and Ireland fire door teams rely on Joinery Fire \
-        Door Software for faster, cost-effective results."
+        description: "A platform for sharing and discovering recipes. Users can upload their favorite recipes, explore new dishes, and engage with a community of cooking enthusiasts. Implemented with MERN stack.",
     },
     {
-        title: "Fire Door",
+        title: "Travel Blog",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "UK and Ireland fire door teams rely on Joinery Fire \
-        Door Software for faster, cost-effective results."
+        description: "A travel blog where users can share their travel experiences, tips, and recommendations. The platform features a map integration to visualize travel destinations. Developed using React and Node.js.",
     },
 ];
 
