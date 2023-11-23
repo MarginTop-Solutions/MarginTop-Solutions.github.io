@@ -33,11 +33,11 @@ const Industries = () => {
                 </div>
 
                 <div className="relative flex-1 flex flex-col justify-between gap-8 bg-[#1c6d7ecd] rounded-xl p-12 overflow-hidden">
-                    <img src={industries[currentIndex].image} alt={industries[currentIndex].title} className="absolute top-0 left-0 w-full h-cover z-[-1]" />
+                    <img src={industries[currentIndex].image} alt={industries[currentIndex].title} className="absolute top-0 left-0 w-full h-full z-[-1]" />
                     <Typography variant="h5">{industries[currentIndex].description}</Typography>
                     <div className="mb-12">
                         {industries[currentIndex].topics.map((topic, i) => (
-                            <div className="flex gap-4 text-xl font-poppins">
+                            <div key={i} className="flex gap-4 text-xl font-poppins">
                                 <Dot />
                                 {topic}
                             </div>

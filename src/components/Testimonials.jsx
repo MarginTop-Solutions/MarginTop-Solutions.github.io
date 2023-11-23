@@ -6,7 +6,7 @@ import { testimonials } from "@/constants";
 import { useState } from "react";
 
 const SmallCard = ({ index, onClick }) => (
-    <div onClick={onClick} className="bg-secondary bg-opacity-5 text-gray-500 gap-6 flex flex-col w-1/2 p-6 self-center hover:bg-opacity-60 hover:text-white rounded-md">
+    <div onClick={onClick} className="bg-secondary bg-opacity-5 text-gray-500 gap-6 flex flex-col xl:w-1/2 p-6 self-center hover:bg-opacity-60 hover:text-white rounded-md">
         <Typography variant="body2">{testimonials[index].feedback}</Typography>
         <div className="flex flex-row gap-4">
             <img
@@ -25,7 +25,7 @@ const SmallCard = ({ index, onClick }) => (
 );
 
 const BigCard = ({ index }) => (
-    <Typography variant="h6" className="bg-secondary text-gray-200 pl-6 pr-12 py-12 rounded-2xl w-3/4">
+    <Typography variant="h6" className="bg-secondary text-gray-200 pl-6 pr-12 py-12 rounded-2xl xl:w-3/4">
         {testimonials[index].feedback}
     </Typography>
 );
@@ -37,10 +37,10 @@ const Testimonials = () => {
     return (
         <div className="mt-12 flex gap-12">
             <div className="flex flex-col">
-                <Typography variant="h2" className="font-bold px-12 py-3">Testimonials</Typography>
+                <Typography variant="h2" className="font-bold px-12 py-3 self-start">Testimonials</Typography>
                 <Typography variant="h6" className="text-gray-400 px-12 py-3">Let our users share their stories and experiences with you.<br /> Discover why they trust our services.</Typography>
 
-                <div className="flex items-center gap-8 px-12 py-3 mt-32 mb-48 self-end">
+                <div className="flex items-center gap-8 px-12 py-3 my-32 self-end">
                     <div className="flex flex-col text-right">
                         <Typography variant="h4" fontWeight={400}>{testimonials[curIndex].name}</Typography>
                         <Typography variant="h6" className="text-secondary">{testimonials[curIndex].title}</Typography>

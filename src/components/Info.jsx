@@ -9,7 +9,7 @@ const InfoCard = ({ info }) => {
     const [subIndex, setSubIndex] = useState(0);
 
     return (
-        <div className="flex flex-row gap-12 px-16">
+        <div className="flex flex-row gap-12 px-16 relative sm:bg-[#233d] lg:bg-[#0000] rounded-2xl">
             <div className="flex flex-col w-2/3 justify-around px-6 py-4">
 
                 <div className="flex flex-row gap-2">
@@ -40,7 +40,7 @@ const InfoCard = ({ info }) => {
                 )}
             </div>
 
-            <img src="/AI_info.png" alt="whatever" className="w-1/3" />
+            <img src="/AI_info.png" alt="whatever" className="absolute top-0 right-0 lg:static lg:w-1/2 h-full w-full  z-[-1]" />
         </div>
     )
 };
