@@ -24,7 +24,7 @@ const Industries = () => {
                     {industries.map((field, i) => (
                         <button
                             key={i}
-                            className={`text-2xl font-medium border-2 border-white rounded-lg px-12 py-6 ${i === currentIndex ? "bg-[#bbb] text-secondary font-medium" : ""}`}
+                            className={`text-2xl font-medium border-2 border-white rounded-lg px-12 py-6 ${i === currentIndex ? "bg-[#bbb] text-secondary" : "hover:bg-[#bbbb]"}`}
                             onClick={() => setCurrentIndex(i)}
                         >
                             {field.title}

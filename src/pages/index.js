@@ -12,9 +12,9 @@ export default function Home() {
 
       <About />
       <Services />
-      <hr className='mx-[9%] mt-12 border-[#666]' />
+      <hr className='mx-24 mt-12 border-[#666]' />
       <Portfolio />
-      <hr className='mx-[9%] mt-12 border-[#666]' />
+      <hr className='mx-24 mt-12 border-[#666]' />
       <Info />
       <Testimonials />
       <Contact />

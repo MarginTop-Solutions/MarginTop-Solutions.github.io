@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const Contact = () => {
     const [lookingFor, setLookingFor] = useState('');
+
     return (
         <div className="flex flex-col m-12">
             <div className="flex flex-row gap-2">
@@ -21,7 +22,7 @@ const Contact = () => {
 
                     <div className="flex flex-row gap-4 flex-wrap">
                         {service_tab_items.map((service, i) => (
-                            <button key={i} className="bg-secondary rounded-xl px-6 py-2 gap-3">
+                            <button key={i} className="bg-secondary hover:bg-white hover:text-black rounded-xl px-6 py-2 gap-3" onClick={()=>setLookingFor(service.topic)}>
                                 {service.topic}
                             </button>
                         ))}
@@ -37,7 +38,7 @@ const Contact = () => {
                         onChange={(e) => setLookingFor(e.target.value)}
                     />
 
-                    <button className="bg-secondary rounded-full py-2 px-12 w-fit mt-6">
+                    <button className="bg-secondary hover:bg-white hover:text-black rounded-full py-2 px-12 w-fit mt-6">
                         Continue
                     </button>
 

@@ -6,7 +6,7 @@ import { testimonials } from "@/constants";
 import { useState } from "react";
 
 const SmallCard = ({ index, onClick }) => (
-    <div onClick={onClick} className="bg-secondary bg-opacity-5 text-gray-500 gap-6 flex flex-col w-1/2 p-6 self-center">
+    <div onClick={onClick} className="bg-secondary bg-opacity-5 text-gray-500 gap-6 flex flex-col w-1/2 p-6 self-center hover:bg-opacity-60 hover:text-white rounded-md">
         <Typography variant="body2">{testimonials[index].feedback}</Typography>
         <div className="flex flex-row gap-4">
             <img
