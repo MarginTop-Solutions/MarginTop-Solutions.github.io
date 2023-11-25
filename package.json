@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.17",
+    "emailjs": "^4.0.3",
     "lucide-react": "^0.292.0",
     "next": "14.0.2",
     "react": "^18",
