@@ -3,6 +3,8 @@ import { Typography } from "@mui/material";
 import { service_tab_items } from "@/constants";
 import { useState } from "react";
 import { Link } from "react-scroll";
+import { styles } from "@/styles/styles";
+import ServicePopUp from "./ServicePopUp";
 
 const ServiceHeader = () => (
     <div>
@@ -21,8 +23,8 @@ const ServiceHeader = () => (
     </div>
 );
 
-const ServicesTab = () => {
-
+const ServicesTab = ({ need, setNeed }) => {
+    const [active, setActive] = useState(false);
     const [index, setIndex] = useState(0);
 
     return (
@@ -43,16 +45,7 @@ const ServicesTab = () => {
                 <div className="flex flex-col w-2/3 px-20 py-8 gap-6 justify-around">
                     <Typography variant="h2" fontWeight={600} className="gradient-text">{service_tab_items[index].topic}</Typography>
                     <Typography variant="h6" >{service_tab_items[index].description}</Typography>
-                    <Link
-                        to={'tools'}
-                        spy={true}
-                        smooth={true}
-                        offset={-200}
-                        duration={500}
-                        className="bg-white text-secondary w-fit px-6 py-2 text-lg rounded-md font-semibold"
-                    >
-                        Learn More
-                    </Link>
+                    <button className={`${styles.wht_button} w-fit`} onClick={()=>setActive(true)}>Learn More</button>
                 </div>
 
                 <img
@@ -61,23 +54,24 @@ const ServicesTab = () => {
                     alt={service_tab_items[index].topic}
                 />
             </div>
+            <ServicePopUp active={active} setActive={setActive} service={service_tab_items[index]} need={need} setNeed={setNeed} />
         </div>
     )
 };
 
-const Services = () => (
+const Services = ({ need, setNeed }) => (
     <div className="flex flex-col mt-[6%] font-poppins">
         <ServiceHeader />
-        <ServicesTab />
+        <ServicesTab need={need} setNeed={setNeed} />
         <Link
             to={'tools'}
             spy={true}
             smooth={true}
             offset={-200}
             duration={500}
-            className="bg-white text-secondary w-fit self-center px-12 py-2 text-lg rounded-md font-semibold"
+            className={`${styles.wht_button} w-fit self-center`}
         >
-            More
+            Tools We Use
         </Link>
     </div>
 );

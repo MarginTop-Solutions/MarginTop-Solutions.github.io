@@ -13,11 +13,11 @@ export default function Home() {
       </div>
 
       <About />
-      <Services />
+      <Services need={need} setNeed={setNeed} />
       <hr className='mx-24 mt-12 border-[#666]' />
       <Portfolio need={need} setNeed={setNeed} />
       <hr className='mx-24 mt-12 border-[#666]' />
-      <Info />
+      <Info need={need} setNeed={setNeed} />
       <Testimonials />
       <Contact need={need} setNeed={setNeed} />
       <Tools />
