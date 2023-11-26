@@ -1,4 +1,3 @@
-import SectionWrapper from "@/wrapper";
 import { nav_items } from "@/constants"
 import QuoteReqButton from "./QuoteReq";
 import { Link } from "react-scroll";

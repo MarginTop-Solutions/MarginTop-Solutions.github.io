@@ -81,7 +81,6 @@ export const portfolio_projects = [
     {
         title: "Travel Blog",
         image: '/sample.png',
-        link: 'https://github.com/SunX-1224',
         description: "A travel blog where users can share their travel experiences, tips, and recommendations. The platform features a map integration to visualize travel destinations. Developed using React and Node.js.",
     },
 ];

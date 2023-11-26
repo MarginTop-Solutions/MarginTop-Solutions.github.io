@@ -8,12 +8,9 @@ import ContactPage1 from "./Contact1";
 import ContactPage2 from "./Contact2";
 import ContactPage3 from "./Contact3";
 
-const Contact = () => {
+const Contact = ({ need, setNeed }) => {
 
     const [page, setPage] = useState(0);
-
-    const [selectedList, setSelectedList] = useState([]);
-    const [lookingFor, setLookingFor] = useState('');
 
     const [form, setForm] = useState({
         name: '',
@@ -28,20 +25,6 @@ const Contact = () => {
         setForm({ ...form, [label]: e.target.value });
     }
 
-    const handleLookingFor = (value) => {
-        if (selectedList) setSelectedList([]);
-        setLookingFor(value);
-    }
-
-    const updateItem = (item) => {
-        if (selectedList.includes(item))
-            setSelectedList(selectedList.filter((s) => s != item))
-        else
-            setSelectedList([...selectedList, item]);
-
-        if (selectedList) setLookingFor('');
-    }
-
     const backBtn = () => (
         <button
             onClick={() => setPage((page + 2) % 3)}
@@ -50,6 +33,18 @@ const Contact = () => {
             Go Back
         </button>
     );
+
+    const handleNeed = (val, typeMode = false) => {
+        let ls = need.split(',').map((x) => x.trim());
+        if (ls.includes(val)) {
+            ls = ls.filter((x) => x != val);
+            setNeed(ls.join(', '));
+        } else if (typeMode) {
+            setNeed(val);
+        } else {
+            setNeed(need + val + ', ');
+        }
+    }
 
     const handleSubmit = (e) => {
         if (!form.name || !form.email || !form.number || (!lookingFor && !selectedList)) return;
@@ -65,7 +60,7 @@ const Contact = () => {
                     number: form.number,
                     budget: form.budget,
                     detail: form.detail,
-                    lookingFor: lookingFor ?? selectedList
+                    lookingFor: need
                 })
             },
             'FFrphKn6nBenkdvRA'
@@ -79,8 +74,7 @@ const Contact = () => {
                 budget: '',
                 detail: ''
             });
-            setLookingFor('');
-            setSelectedList([]);
+            setNeed("");
         }, (err) => {
             console.log(err);
             alert('Something went wrong !');
@@ -105,10 +99,8 @@ const Contact = () => {
         switch (index) {
             case 0:
                 return <ContactPage1
-                    selectedList={selectedList}
-                    updateItem={updateItem}
-                    lookingFor={lookingFor}
-                    handleLookingFor={handleLookingFor}
+                    need={need}
+                    handleNeed={handleNeed}
                     ContinueButton={continueBtn}
                 />;
 
@@ -130,12 +122,10 @@ const Contact = () => {
 
             default:
                 return <ContactPage1
-                    selectedList={selectedList}
-                    updateItem={updateItem}
-                    lookingFor={lookingFor}
-                    handleLookingFor={handleLookingFor}
+                    need={need}
+                    handleNeed={handleNeed}
                     ContinueButton={continueBtn}
-                />
+                />;
         }
     }
 
