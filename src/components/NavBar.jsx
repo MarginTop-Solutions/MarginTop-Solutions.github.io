@@ -13,7 +13,7 @@ const CollapsableNavBar = () => {
     return (
         <nav className="relative w-2/5 flex flex-row gap-2 rounded-xl">
 
-            <div className="absolute w-full h-screen top-0 right-0 py-6 px-12 flex flex-row bg-primary rounded-xl">
+            <div className="absolute fixed w-full h-screen top-0 right-0 py-6 px-12 flex flex-row bg-primary rounded-xl">
 
                 <div className=" flex flex-col justify-around py-4 px-8 w-full">
                     {nav_items.map(({ label, link }) => (
@@ -52,7 +52,7 @@ const NavBar = () => {
     }, []);
 
     return (
-        <div className="flex flex-row justify-between xl:px-24 gap-2 xl:gap-6">
+        <div className="flex flex-row justify-between xl:px-24 py-12 gap-2 xl:gap-6">
             <img src='/margintoplogo.svg' alt="logo" className="w-64 mx-12 xl:px-0" />
 
             {!isSmall ?
