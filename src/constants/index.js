@@ -73,6 +73,18 @@ export const portfolio_projects = [
         description: "A fitness tracking application that allows users to log their workouts, set fitness goals, and monitor their progress over time. Built using React Native for cross-platform compatibility.",
     },
     {
+        title: "Expense Tracker",
+        image: '/sample.png',
+        link: 'https://github.com/SunX-1224',
+        description: "An expense tracker application that helps users manage their finances by tracking income, expenses, and providing insights into spending patterns. Developed with React and Firebase.",
+    },
+    {
+        title: "Social Media Dashboard",
+        image: '/sample.png',
+        link: 'https://github.com/SunX-1224',
+        description: "A social media dashboard application that allows users to manage and analyze their social media accounts in one central hub. Built using React and Redux for state management.",
+    },
+    {
         title: "Recipe Sharing Platform",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',

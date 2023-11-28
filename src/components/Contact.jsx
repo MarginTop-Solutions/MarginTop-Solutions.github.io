@@ -47,7 +47,7 @@ const Contact = ({ need, setNeed }) => {
     }
 
     const handleSubmit = (e) => {
-        if (!form.name || !form.email || !form.number || (!lookingFor && !selectedList)) return;
+        if (!form.name || !form.email || !form.number || !need) return;
 
         emailjs.send('todo', 'template_1lawbul',
             {
@@ -60,7 +60,7 @@ const Contact = ({ need, setNeed }) => {
                     number: form.number,
                     budget: form.budget,
                     detail: form.detail,
-                    lookingFor: need
+                    need: need
                 })
             },
             'FFrphKn6nBenkdvRA'
