@@ -56,7 +56,7 @@ const ProjectsView = ({ focusedIndex, need, setNeed }) => {
 
 
 const Portfolio = ({ need, setNeed }) => {
-    const [focusedIndex, setFocusedIndex] = useState(0);
+    const [focusedIndex, setFocusedIndex] = useState(Math.round(portfolio_projects.length / 2));
 
     const handleScroll = (direction) => {
         setFocusedIndex((focusedIndex + direction + portfolio_projects.length) % portfolio_projects.length);
