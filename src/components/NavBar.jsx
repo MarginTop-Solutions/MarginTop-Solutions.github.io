@@ -11,9 +11,9 @@ const CollapsableNavBar = () => {
     if (collapsed) return <AlignJustify onClick={() => setCollapsed(!collapsed)} width={64} height={56} className="my-auto mx-8 bg-secondary p-4 rounded-full hover:cursor-pointer" />;
 
     return (
-        <nav className="relative w-2/5 flex flex-row gap-2 rounded-xl">
+        <nav className="relative flex flex-row gap-2 rounded-xl">
 
-            <div className="absolute fixed w-full h-screen top-0 right-0 py-6 px-12 flex flex-row bg-primary rounded-xl">
+            <div className="fixed w-full md:w-1/2 h-screen top-0 right-0 py-6 px-12 flex flex-row bg-primary rounded-xl">
 
                 <div className=" flex flex-col justify-around py-4 px-8 w-full">
                     {nav_items.map(({ label, link }) => (
@@ -53,10 +53,10 @@ const NavBar = () => {
 
     return (
         <div className="flex flex-row justify-between xl:px-24 py-12 gap-2 xl:gap-6">
-            <img src='/margintoplogo.svg' alt="logo" className="w-64 mx-12 xl:px-0" />
+            <img src='/margintoplogo.svg' alt="logo" className="w-64 xl:px-0" />
 
             {!isSmall ?
-                <nav className={`flex flex-row gap-2 xl:gap-4 justify-between my-auto items-center`}>
+                <nav className={`flex flex-row gap-2 xl:gap-4 px-4 justify-between my-auto items-center`}>
                     {nav_items.map(({ label, link }) => (
 
                         <Link

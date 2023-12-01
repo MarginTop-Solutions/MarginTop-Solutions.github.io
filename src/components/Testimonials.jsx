@@ -9,7 +9,7 @@ const SmallCard = ({ index, onClick, fade }) => {
 
 
     return (
-        <div onClick={onClick} className={`smallCard gap-6 xl:w-1/2 p-6 self-center hover:bg-opacity-60 hover:text-white rounded-md ${fade && "fade-card"}`}>
+        <div onClick={onClick} className={`smallCard gap-6 xl:w-1/2 p-6 self-center hover:bg-opacity-60 hover:text-white rounded-md ${fade && "opacity-0"}`}>
             <Typography variant="body2">{testimonials[index].feedback}</Typography>
             <div className="flex flex-row gap-4">
                 <img
@@ -29,7 +29,7 @@ const SmallCard = ({ index, onClick, fade }) => {
 };
 
 const BigCard = ({ index, fade }) => (
-    <Typography variant="h6" className={`bg-secondary text-gray-200 pl-6 pr-12 py-12 rounded-2xl xl:w-3/4 ${fade && "fade-card"}`}>
+    <Typography variant="h6" className={`bg-secondary text-gray-200 pl-6 pr-12 py-12 rounded-2xl xl:w-3/4 ${fade && "opacity-0"}`}>
         {testimonials[index].feedback}
     </Typography>
 );
@@ -48,7 +48,7 @@ const Testimonials = () => {
     };
 
     return (
-        <div className="mt-12 flex gap-12 h-screen">
+        <div className="mt-24 flex gap-12 min-h-screen">
             <div className="flex flex-col">
                 <Typography variant="h2" className="font-bold px-12 py-3 self-start">Testimonials</Typography>
                 <Typography variant="h6" className="text-gray-400 px-12 py-3">Let our users share their stories and experiences with you.<br /> Discover why they trust our services.</Typography>
@@ -69,7 +69,7 @@ const Testimonials = () => {
 
             <div className="flex flex-col justify-between bg-white w-[6px] rounded-[4px]">
                 {testimonials.map((_, i) =>
-                    <div onClick={() => handleClick(i - curIndex)} className={`self-center hover:cursor-pointer hover:scale-x-150 w-[16px] h-[16px] rounded-full bg-white duration-300 ${(i === curIndex) && "scale-125 bg-[#aaa]"}`} />
+                    <div key={i} onClick={() => handleClick(i - curIndex)} className={`self-center hover:cursor-pointer hover:scale-x-150 w-[16px] h-[16px] rounded-full bg-white duration-300 ${(i === curIndex) && "scale-125 bg-[#aaa]"}`} />
                 )}
 
             </div>

@@ -17,7 +17,7 @@ const Hero = () => {
 
     return (
         <div className="mt-12 flex flex-row gap-6">
-            <div className="flex flex-col items-end gap-6">
+            <div className="flex flex-col items-center gap-6">
                 {making.map((_, i) => i === curIndex ?
                     <Disc key={i} /> : <div className="w-4 h-4 rounded-full bg-white" key={i} />
                 )}

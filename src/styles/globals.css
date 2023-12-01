@@ -59,10 +59,6 @@
     cursor: pointer;
     flex-direction: column;
   }
-
-  .fade-card {
-    opacity: 0;
-  }
 }
 
 body {
