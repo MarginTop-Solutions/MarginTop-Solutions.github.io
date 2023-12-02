@@ -5,7 +5,6 @@ export const nav_items = [
     { label: 'About Us', link: 'about' },
     { label: 'Services', link: 'services' },
     { label: 'Portfolio', link: 'portfolio' },
-    { label: 'Contact Us', link: 'contact' }
 ];
 
 export const making = ["ANDROID_APPS", "WEB_APPS", "GRAPHICS", "APIs"]

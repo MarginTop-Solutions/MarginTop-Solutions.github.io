@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+/*
 import { GetRandomQuote } from "@/constants";
 import { styles } from "@/styles/styles";
 import { Dialog, Typography } from "@mui/material";
@@ -52,6 +54,20 @@ const QuoteReqButton = (props) => {
             </div>
         </Dialog>
     )
-}
+}*/
+
+
+const QuoteReqButton = (props) => (
+    <Link
+        to="contact"
+        spy={true}
+        smooth={true}
+        offset={-200}
+        duration={500}
+        {...props}
+    >
+        Request a Quote
+    </Link>
+)
 
 export default QuoteReqButton;
