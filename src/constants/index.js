@@ -175,7 +175,7 @@ export const infos = [
 export const testimonials = [
     {
         name: 'Jon Snow',
-        title: 'CEO/Founder',
+        titles: ['CEO/Founder'],
         profile: '/randomperson.png',
         feedback: 'Ordered my first mobile app development \
         to ITSoft Solutions.I was inexperienced \
@@ -185,7 +185,7 @@ export const testimonials = [
     },
     {
         name: 'Tony Stark',
-        title: 'CEO/Founder',
+        titles: ['CEO/Founder', 'Thanos killer'],
         profile: '/dedman.jpeg',
         feedback: 'We possess years of expertise in developing fully-customized \
         web designing and development solutions. Our team of dedicated developers (a.k.a. The Avengers) \
@@ -193,7 +193,7 @@ export const testimonials = [
     },
     {
         name: 'Hank Pym',
-        title: 'CEO (Pym Tech)',
+        titles: ['CEO (Pym Tech)'],
         profile: '/nothankpym.jpg',
         feedback: 'Ordered my first mobile app development \
         to ITSoft Solutions.I was inexperienced \
@@ -203,7 +203,7 @@ export const testimonials = [
     },
     {
         name: 'Iron Man',
-        title: 'Dead Man',
+        titles: ['Dead Man'],
         profile: '/dedman.jpeg',
         feedback: 'In creating a solid product, Plex Bit Infosystems \
         has been our dependable ally and collaborator here in Stark Industries. Since they began \
@@ -212,7 +212,7 @@ export const testimonials = [
     },
     {
         name: 'Jon Snow',
-        title: 'King in the North',
+        titles: ['King in the North', 'Queen killer'],
         profile: '/randomperson.png',
         feedback: 'Ordered my first mobile app development \
         to ITSoft Solutions.I was inexperienced \
@@ -309,67 +309,7 @@ const quotes = [
     "If Ruby is not and Perl is the answer, you don’t understand the question.",
     "The best thing about a boolean is even if you are wrong, you are only off by a bit.",
     "I'm not anti-social; I'm just not user-friendly.",
-    "It’s not a bug – it’s an undocumented feature.",
-    "If you give someone a program, you will frustrate them for a day; if you teach them how to program, you will frustrate them for a lifetime.",
-    "Optimism is an occupational hazard of programming: testing is the treatment.",
-    "In software development, there's no silver bullet.",
-    "Software is a great combination of artistry and engineering.",
-    "A program is never less than 90% complete, and never more than 95% complete.",
-    "The goal of a software engineer is to build good software, not to build software well.",
-    "The purpose of software engineering is to control complexity, not to create it.",
-    "Code is like humor. When you have to explain it, it’s bad.",
-    "The best code is no code at all.",
-    "Any code of your own that you haven’t looked at for six or more months might as well have been written by someone else.",
-    "In programming, the hard part isn’t solving problems, but deciding what problems to solve.",
-    "Programming can be fun, so can cryptography; however, they should not be combined.",
-    "If the code and the comments disagree, it's probably correct.",
-    "Don't worry if it doesn't work right. If everything did, you'd be out of a job.",
-    "The best way to predict the future is to implement it.",
-    "I don't care if it works on your machine! We are not shipping your machine!",
-    "Before software can be reusable it first has to be usable.",
-    "Good code is its own best documentation.",
-    "Deleted code is debugged code.",
-    "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.",
-    "I have always wished for my computer to be as easy to use as my telephone; my wish has come true because I can no longer figure out how to use my telephone.",
-    "There are only two kinds of programming languages: those people always bitch about and those nobody uses.",
-    "A language that doesn't affect the way you think about programming is not worth knowing.",
-    "The best programmers are not marginally better than the worst. They are orders of magnitude better, measured by whatever standard: conceptual creativity, speed, ingenuity of design, and so on.",
-    "The only way to go fast is to go well.",
-    "The cheapest, fastest, and most reliable components are those that aren't there.",
-    "First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack.",
-    "Programming is breaking of one big impossible task into several very small possible tasks.",
-    "A language that doesn't affect the way you think about programming is not worth knowing.",
-    "The best programmers are not marginally better than the worst. They are orders of magnitude better, measured by whatever standard: conceptual creativity, speed, ingenuity of design, and so on.",
-    "The only way to go fast is to go well.",
-    "The cheapest, fastest, and most reliable components are those that aren't there.",
-    "First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack.",
-    "Programming is breaking of one big impossible task into several very small possible tasks.",
-    "Programming can be fun, so can cryptography; however, they should not be combined.",
-    "Software is a great combination of artistry and engineering.",
-    "A program is never less than 90% complete, and never more than 95% complete.",
-    "The goal of a software engineer is to build good software, not to build software well.",
-    "The purpose of software engineering is to control complexity, not to create it.",
-    "Code is like humor. When you have to explain it, it’s bad.",
-    "The best code is no code at all.",
-    "Any code of your own that you haven’t looked at for six or more months might as well have been written by someone else.",
-    "In programming, the hard part isn’t solving problems, but deciding what problems to solve.",
-    "Programming can be fun, so can cryptography; however, they should not be combined.",
-    "If the code and the comments disagree, it's probably correct.",
-    "Don't worry if it doesn't work right. If everything did, you'd be out of a job.",
-    "The best way to predict the future is to implement it.",
-    "I don't care if it works on your machine! We are not shipping your machine!",
-    "Before software can be reusable it first has to be usable.",
-    "Good code is its own best documentation.",
-    "Deleted code is debugged code.",
-    "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.",
-    "I have always wished for my computer to be as easy to use as my telephone; my wish has come true because I can no longer figure out how to use my telephone.",
-    "There are only two kinds of programming languages: those people always bitch about and those nobody uses.",
-    "A language that doesn't affect the way you think about programming is not worth knowing.",
-    "The best programmers are not marginally better than the worst. They are orders of magnitude better, measured by whatever standard: conceptual creativity, speed, ingenuity of design, and so on.",
-    "The only way to go fast is to go well.",
-    "The cheapest, fastest, and most reliable components are those that aren't there.",
-    "First learn computer science and all the theory. Next develop a programming style. Then forget all that and just hack.",
-    "Programming is breaking of one big impossible task into several very small possible tasks."
+    "It’s not a bug – it’s an undocumented feature."
 ];
 
 export const GetRandomQuote = () => quotes[Math.floor(Math.random() * quotes.length)];

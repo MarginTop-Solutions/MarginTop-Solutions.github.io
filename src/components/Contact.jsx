@@ -47,9 +47,16 @@ const Contact = ({ need, setNeed }) => {
     }
 
     const handleSubmit = (e) => {
-        if (!form.name || !form.email || !form.number || !need) return;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!form.name || !form.email || !need) {
+            alert('Name, E-Mail and reason for contact cannot be left empty !')
+            return;
+        } else if (!emailRegex.test(form.email)) {
+            alert('Please enter a valid email address !');
+            return;
+        }
 
-        emailjs.send('todo', 'template_1lawbul',
+        emailjs.send('service_bt5gula', 'template_e8rk73d',
             {
                 from_name: form.name,
                 to_name: "MarginTop Solutions",

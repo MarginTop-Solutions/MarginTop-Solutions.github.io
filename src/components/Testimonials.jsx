@@ -21,7 +21,7 @@ const SmallCard = ({ index, onClick, fade }) => {
 
                 <div className="my-auto">
                     <Typography variant="body1">{testimonials[index].name}</Typography>
-                    <Typography variant="body2" className="text-secondary">{testimonials[index].title}</Typography>
+                    <Typography variant="body2" className="text-secondary">{testimonials[index].titles[0]}</Typography>
                 </div>
             </div>
         </div>
@@ -54,9 +54,11 @@ const Testimonials = () => {
                 <Typography variant="h6" className="text-gray-400 px-12 py-3">Let our users share their stories and experiences with you.<br /> Discover why they trust our services.</Typography>
 
                 <div className={`flex items-center gap-8 px-12 py-3 my-auto self-end ${fade && "fade-card"}`}>
-                    <div className="flex flex-col text-right">
+                    <div className="flex flex-col text-right px-6 py-3">
                         <Typography variant="h4" fontWeight={400}>{testimonials[curIndex].name}</Typography>
-                        <Typography variant="h6" className="text-secondary">{testimonials[curIndex].title}</Typography>
+                        {testimonials[curIndex].titles.map((t) =>
+                            <Typography variant="h6" className="text-secondary">{t}</Typography>
+                        )}
                     </div>
                     <img
                         src={testimonials[curIndex].profile}
