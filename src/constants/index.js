@@ -13,161 +13,164 @@ export const service_tab_items = [
     {
         topic: "Web Development",
         image: '/webdev.png',
-        description: "We design, develop and maintain websites & web apps.\
-         We design, develop and maintain websites & web apps. We design, \
-         develop and maintain websites & web apps. We design, develop and\
-          maintain websites & web apps. "
+        description: "MarginTop Solutions excels in designing, developing, and maintaining cutting-edge websites and web applications. Our team ensures your online presence stands out with innovative solutions tailored to your unique needs."
     },
     {
         topic: "Mobile App Development",
         image: '/webdev.png',
-        description: "We design, develop and maintain websites & web apps.\
-         We design, develop and maintain websites & web apps. We design, \
-         develop and maintain websites & web apps. We design, develop and\
-          maintain websites & web apps. "
+        description: "Elevate your mobile presence with MarginTop Solutions. We specialize in designing, developing, and maintaining mobile apps that not only meet but exceed user expectations. Trust us for seamless and user-friendly experiences."
     },
     {
-        topic: "Blockchain",
+        topic: "Machine Learning",
         image: '/webdev.png',
-        description: "We design, develop and maintain websites & web apps.\
-         We design, develop and maintain websites & web apps. We design, \
-         develop and maintain websites & web apps. We design, develop and\
-          maintain websites & web apps. "
+        description: "Experience the power of intelligent algorithms with MarginTop Solutions. We specialize in designing, developing, and maintaining machine learning solutions that empower your business to make data-driven decisions and stay ahead in the digital landscape."
+    },
+    {
+        topic: "Data Analysis & Visualization",
+        image: '/webdev.png',
+        description: "Unlock insights from your data with MarginTop Solutions. Our expertise in data analysis and visualization ensures that you gain meaningful and actionable insights, enhancing your decision-making processes."
+    },
+    {
+        topic: "IoT and Email Automation",
+        image: '/webdev.png',
+        description: "Transform your business with MarginTop Solutions' expertise in IoT and Email Automation. We design, develop, and maintain solutions that seamlessly integrate the Internet of Things and streamline your email communication processes for enhanced efficiency."
     },
     {
         topic: "Graphics Design",
         image: '/webdev.png',
-        description: "We design, develop and maintain websites & web apps.\
-         We design, develop and maintain websites & web apps. We design, \
-         develop and maintain websites & web apps. We design, develop and\
-          maintain websites & web apps. "
-    },
-    {
-        topic: "Hire a Developer",
-        image: '/webdev.png',
-        description: "We design, develop and maintain websites & web apps.\
-         We design, develop and maintain websites & web apps. We design, \
-         develop and maintain websites & web apps. We design, develop and\
-          maintain websites & web apps. "
-    },
+        description: "Make a lasting visual impact with MarginTop Solutions' Graphics Design services. Our team creates stunning visuals that captivate your audience, ensuring your brand stands out in the digital realm. Trust us for creative and compelling designs."
+    }
 ];
+
 
 export const portfolio_projects = [
     {
-        title: "Social Media Dashboard",
+        title: "Scrabble Logger",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
         description: "A social media dashboard application that allows users to manage and analyze their social media accounts in one central hub. Built using React and Redux for state management.",
     },
     {
-        title: "Expense Tracker",
+        title: "Undelievered Email Extractor",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
         description: "An expense tracker application that helps users manage their finances by tracking income, expenses, and providing insights into spending patterns. Developed with React and Firebase.",
     },
     {
-        title: "Fitness Tracker App",
+        title: "Point Pressure Mobile Application",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
         description: "A fitness tracking application that allows users to log their workouts, set fitness goals, and monitor their progress over time. Built using React Native for cross-platform compatibility.",
     },
     {
-        title: "Expense Tracker",
+        title: "Logistics Service Platform",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
         description: "An expense tracker application that helps users manage their finances by tracking income, expenses, and providing insights into spending patterns. Developed with React and Firebase.",
     },
     {
-        title: "Social Media Dashboard",
+        title: "Learning Management System",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
         description: "A social media dashboard application that allows users to manage and analyze their social media accounts in one central hub. Built using React and Redux for state management.",
     },
     {
-        title: "Recipe Sharing Platform",
+        title: "Artist Portfolio Website",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
         description: "A platform for sharing and discovering recipes. Users can upload their favorite recipes, explore new dishes, and engage with a community of cooking enthusiasts. Implemented with MERN stack.",
     },
-    {
-        title: "Travel Blog",
-        image: '/sample.png',
-        description: "A travel blog where users can share their travel experiences, tips, and recommendations. The platform features a map integration to visualize travel destinations. Developed using React and Node.js.",
-    },
+    // {
+    //     title: "Travel Blog",
+    //     image: '/sample.png',
+    //     description: "A travel blog where users can share their travel experiences, tips, and recommendations. The platform features a map integration to visualize travel destinations. Developed using React and Node.js.",
+    // },
 ];
 
 export const infos = [
     {
-        title: "Artificial Intelligence",
-        description:
-            "Artificial Intelligence (AI) is a branch of computer science that aims to create machines capable of intelligent behavior. This involves the development of algorithms and models that enable computers to perform tasks that typically require human intelligence. AI technologies include machine learning, natural language processing, computer vision, and more.",
-        topics: [
-            {
-                title: "Metaverse Development",
-                description:
-                    "Metaverse development refers to the creation of a shared virtual space that allows users to interact with each other and with digital objects in real-time.",
-            },
-            {
-                title: "NFT Marketplace Development",
-                description:
-                    "NFT Marketplace Development involves building platforms that enable the buying, selling, and trading of digital assets as non-fungible tokens (NFTs). These tokens represent unique digital or real-world items and are often used in the context of digital art, collectibles, and gaming.",
-            },
-            {
-                title: "Dapp Development",
-                description:
-                    "Dapp Development, short for decentralized application development, focuses on creating applications that run on blockchain networks. These applications leverage the decentralized and secure nature of blockchain technology, providing users with increased transparency and control over their data.",
-            },
-            {
-                title: "Smart Contract Development",
-                description:
-                    "Smart Contract Development involves coding self-executing contracts with predefined rules and conditions. These contracts run on blockchain platforms, automating and enforcing the execution of agreements, often used in various decentralized applications and blockchain ecosystems.",
-            },
-        ],
+        
+            title: "Artificial Intelligence",
+            description: "MarginTop Solutions pioneers in Artificial Intelligence (AI) services, crafting intelligent solutions through cutting-edge technologies such as machine learning, natural language processing, and computer vision.",
+            topics: [
+                {
+                    title: "Machine Learning Development",
+                    description: "Empower your business with MarginTop Solutions' expertise in machine learning development. We create intelligent algorithms, enabling machines to learn from data and perform tasks with human-like intelligence."
+                },
+                {
+                    title: "NLP Solutions",
+                    description: "Revolutionize language-based interactions with MarginTop Solutions' NLP solutions. We harness the power of Natural Language Processing to interpret, understand, and generate human-like text, optimizing communication for businesses."
+                },
+                {
+                    title: "Computer Vision Services",
+                    description: "Step into the future of visual intelligence with MarginTop Solutions. Our Computer Vision Services interpret visual data, from image recognition to autonomous vehicles, enhancing decision-making and efficiency in various applications."
+                },
+                {
+                    title: "AI Consulting and Strategy",
+                    description: "Chart your AI journey with confidence. MarginTop Solutions offers AI Consulting and Strategy services, providing expert guidance on integrating AI into your business seamlessly for strategic implementation and optimal outcomes."
+                },
+                {
+                    title: "Low Code AI Development",
+                    description: "Accelerate AI application development with MarginTop Solutions' Low Code AI Development. Our approach leverages low-code platforms for streamlined development, ensuring rapid deployment of tailored AI solutions to meet your business needs."
+                }
+            ]
+        
+        ,
     },
     {
-        title: "Web Development",
-        description:
-            "Web Development encompasses the creation and maintenance of websites and web applications. It involves both frontend and backend development, including the design of user interfaces, the implementation of server-side logic, and the management of databases. Various technologies and frameworks are utilized to ensure responsive, interactive, and efficient web solutions.",
+        title: "Mobile App and Web Development",
+        description: "MarginTop Solutions excels in delivering top-notch Mobile App and Web Development services, offering customized solutions for your business needs.",
         topics: [
             {
-                title: "Responsive Web Design",
-                description:
-                    "Responsive web design is an approach to design and development that ensures web applications and websites provide an optimal viewing and interaction experience across a wide range of devices and screen sizes.",
+                title: "Custom Mobile App Development",
+                description: "Crafting tailored mobile applications that meet your specific requirements, MarginTop Solutions ensures a seamless user experience and high-performance functionality."
             },
             {
-                title: "Frontend Frameworks",
-                description:
-                    "Frontend frameworks, such as React, Angular, and Vue.js, are tools that facilitate the development of interactive and dynamic user interfaces for web applications. They provide reusable components and help manage state and data flow efficiently.",
+                title: "Responsive Web Design and Development",
+                description: "Create visually appealing and user-friendly websites with MarginTop Solutions' expertise in responsive web design and development, ensuring optimal performance across various devices."
             },
             {
-                title: "Backend Development",
-                description:
-                    "Backend development involves building the server-side logic and databases that enable the functionality of web applications. Common backend languages include Node.js, Python, Ruby, and Java, and databases like MySQL, MongoDB, and PostgreSQL are often used.",
+                title: "E-commerce Development",
+                description: "Enable online growth and enhance customer experience through MarginTop Solutions' E-commerce development services, tailored to meet the unique demands of your business."
             },
-        ],
+            {
+                title: "Progressive Web App (PWA) Development",
+                description: "Stay ahead in the digital landscape with MarginTop Solutions' Progressive Web App development, combining the best of web and mobile applications for an enhanced user experience."
+            },
+            {
+                title: "Web and Mobile App Testing Services",
+                description: "Ensure the reliability and functionality of your applications with MarginTop Solutions' comprehensive testing services, covering both web and mobile platforms to deliver high-quality and bug-free solutions."
+            }
+        ]
     },
+    
     {
-        title: "Android App Development",
-        description:
-            "Android App Development focuses on creating mobile applications for the Android platform. It involves designing user interfaces, implementing functionality, and ensuring a seamless user experience. Developers use languages like Java or Kotlin and leverage frameworks like Flutter and React Native for cross-platform development.",
+        title: "IoT and Robotics",
+        description: "MarginTop Solutions offers comprehensive IoT and Robotics services, including solution development, industrial automation, smart home and consumer IoT devices, IoT security solutions, and expert consulting and implementation.",
         topics: [
             {
-                title: "Native App Development",
-                description:
-                    "Native app development involves creating mobile applications specifically for the Android platform, using programming languages like Java or Kotlin. Native apps offer high performance and seamless integration with the device.",
+                title: "IoT Solution Development",
+                description: "Our expert team at MarginTop Solutions specializes in crafting innovative and tailored IoT solutions to meet the unique needs of your business, ensuring seamless connectivity and intelligent data-driven insights.",
             },
             {
-                title: "Cross-Platform Development",
-                description:
-                    "Cross-platform development allows the creation of mobile apps that can run on multiple platforms, including Android and iOS. Frameworks such as Flutter and React Native enable developers to write code once and deploy it across platforms.",
+                title: "Industrial Automation and Robotics",
+                description: "MarginTop Solutions leverages cutting-edge technologies to provide industrial automation and robotics solutions, optimizing processes and enhancing productivity in various industries.",
             },
             {
-                title: "App Security",
-                description:
-                    "App security is a critical aspect of Android app development, involving practices such as secure coding, data encryption, and secure authentication to protect user data and prevent unauthorized access or malicious activities.",
+                title: "Smart Home and Consumer IoT Devices",
+                description: "Create a connected living experience with MarginTop Solutions' expertise in developing smart home and consumer IoT devices, bringing convenience and efficiency to everyday life.",
             },
-        ],
-    },
+            {
+                title: "IoT Security Solutions",
+                description: "Ensuring the highest level of security, MarginTop Solutions implements robust IoT security solutions, safeguarding your connected devices and data from potential threats and breaches.",
+            },
+            {
+                title: "IoT Consulting and Implementation",
+                description: "Benefit from MarginTop Solutions' extensive IoT consulting services, guiding you through strategic planning, implementation, and optimization to maximize the potential of your IoT initiatives.",
+            }
+        ]
+    }
+    
 ];
 
 

@@ -21,15 +21,15 @@ const About = () => (
                 <MoveRight />
             </Link>
         </div>
-        <div className="flex-1 px-6 py-4 flex flex-col justify-between font-inter text-lg">
+        <div className="flex-1 px-6 py-4 flex flex-col justify-between font-inter">
+        <Typography variant='h1' className="font-bold">Hi !</Typography>
+        <Typography variant='h4' className="font-light">Welcome to MarginTop Solutions</Typography>
+            <br />
             <p>
-                Based in Amsterdam and Nepal, we blend Dutch precision with Nepali creativity to
-                create exceptional software solutions. Our diverse team fosters continuous innovation,
-                offering services from tailor made software.
+            We believe in innovative ideas comes from the ground level. We believe in building relationship and trust before building the prototype. So, if you share the same value as we do, we would love to talk to you and shape your idea into reality.
             </p>
             <p>
-                Join us in shaping the future of technology, where Amsterdam and the Himalayas converge
-                to transform industries and enrich lives.
+            Team MarginTop Solutions.
             </p>
         </div>
     </div>

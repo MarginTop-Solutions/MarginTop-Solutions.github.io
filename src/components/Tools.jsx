@@ -11,11 +11,11 @@ const Tools = () => (
             ))}
         </div>
 
-        <div className="flex flex-row justify-between scale-[-1]">
+        {/* <div className="flex flex-row justify-between scale-[-1]">
             {tools.map((tool, i) => (
                 <img src={tool} key={i} alt={tool} />
             ))}
-        </div>
+        </div> */}
     </div>
 );
 
