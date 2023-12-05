@@ -9,11 +9,11 @@ export const nav_items = [
 
 export const making = [
     {
-        title: "ANDROID_APPS",
+        title: "ANDROID-APPS",
         description: "Secure the finest android app development services with us. We offer innovative solutions to expand your business and enhance its reach."
     },
     {
-        title: "WEB_APPS",
+        title: "WEB-APPS",
         description: "Secure the finest web design and development services with us. We offer innovative solutions to expand your business and enhance its reach."
     },
     {

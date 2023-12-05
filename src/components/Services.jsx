@@ -7,12 +7,12 @@ import { styles } from "@/styles/styles";
 import ServicePopUp from "./ServicePopUp";
 
 const ServiceHeader = () => (
-    <div>
+    <div className="flex flex-col gap-2">
         <Typography variant="h6" fontWeight={400} className="font-poppins">
             Break New Grounds
         </Typography>
 
-        <Typography variant="h1" fontWeight={800} letterSpacing={4} className="font-sans text-stroke-white text-fill-black">
+        <Typography fontWeight={800} letterSpacing={4} className="font-sans text-stroke-white text-fill-black text-7xl md:text-9xl">
             Services
         </Typography>
 
@@ -29,10 +29,10 @@ const ServicesTab = ({ need, setNeed }) => {
 
     return (
         <div className="py-6">
-            <div className="flex flex-row text-xl">
+            <div className="flex flex-row text-xl overflow-scroll">
                 {service_tab_items.map((item, i) => (
                     <button
-                        className={`py-2 px-4 rounded-t-md ${i === index ? "bg-secondary font-bold" : "hover:bg-[#aaaa]"}`}
+                        className={`p-2 lg:px-4 rounded-t-md ${i === index ? "bg-secondary font-bold" : "hover:bg-[#aaaa]"}`}
                         onClick={() => setIndex(i)}
                         key={i}
                     >
@@ -41,15 +41,15 @@ const ServicesTab = ({ need, setNeed }) => {
                 ))}
             </div>
 
-            <div className="flex flex-row p-4 gradient-border">
-                <div className="flex flex-col w-2/3 px-20 py-8 gap-6 justify-around">
-                    <Typography variant="h2" fontWeight={600} className="gradient-text">{service_tab_items[index].topic}</Typography>
+            <div className="flex flex-row lg:gradient-border relative">
+                <div className="flex flex-col w-full lg:w-2/3 lg:px-20 gap-6 p-4 justify-around">
+                    <Typography fontWeight={600} className="gradient-text text-4xl lg:text-6xl">{service_tab_items[index].topic}</Typography>
                     <Typography variant="h6" >{service_tab_items[index].description}</Typography>
                     <button className={`${styles.wht_button} w-fit`} onClick={()=>setActive(true)}>Learn More</button>
                 </div>
 
                 <img
-                    className="rounded-md h-cover w-1/3"
+                    className="rounded-md h-full w-full object-cover absolute z-[-1] opacity-30 md:opacity-100 md:static lg:w-1/3"
                     src={service_tab_items[index].image}
                     alt={service_tab_items[index].topic}
                 />
@@ -60,7 +60,7 @@ const ServicesTab = ({ need, setNeed }) => {
 };
 
 const Services = ({ need, setNeed }) => (
-    <div className="flex flex-col mt-[6%] font-poppins">
+    <div className="flex flex-col my-[3%] font-poppins">
         <ServiceHeader />
         <ServicesTab need={need} setNeed={setNeed} />
         <Link

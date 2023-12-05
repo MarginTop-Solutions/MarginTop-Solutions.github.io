@@ -33,11 +33,11 @@ const ProjectsView = ({ focusedIndex, need, setNeed }) => {
             {portfolio_projects.map((proj, i) => (
                 <div
                     key={i}
-                    className={`project-${i} relative rounded-xl min-w-[800px] ${focusedIndex != i && "scale-50"} overflow-hidden duration-1000 ease-in-out`}
+                    className={`project-${i} relative rounded-xl min-w-[100vw] lg:min-w-[50vw] ${focusedIndex != i && "scale-50"} overflow-hidden duration-1000 ease-in-out`}
                 >
-                    <img src={proj.image} alt={proj.title} className={`absolute w-full rounded-xl z-[-1]`} />
+                    <img src={proj.image} alt={proj.title} className={`absolute w-full h-full object-cover rounded-xl z-[-1]`} />
 
-                    <div className={`relative flex flex-col gap-16 xl:w-3/5 w-2/3 bg-[#012a2abb] px-8 py-12 ${focusedIndex === i ? "" : "opacity-0"} duration-1000 ease-in-out`}>
+                    <div className={`relative flex flex-col gap-16 xl:w-3/5 bg-[#012a2abb] px-8 py-12 ${focusedIndex === i ? "" : "opacity-0"} duration-1000 ease-in-out`}>
                         <Typography variant="h4" fontWeight={600}>
                             {proj.title}
                         </Typography>

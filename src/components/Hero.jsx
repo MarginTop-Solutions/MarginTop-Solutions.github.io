@@ -24,9 +24,9 @@ const Hero = () => {
             </div>
             <div className="flex-grow">
                 <Typography variant="h5">WE MADE AND WE ARE</Typography>
-                <Typography variant="h2" className="font-poppins"> MAKING YOUR</Typography>
-                <Typography variant="h3" fontWeight={600} key={curIndex} className="typing-animation">{making[curIndex].title}</Typography>
-                <Typography variant="h6" fontWeight={400} className="font-poppins w-1/2">
+                <Typography className="text-5xl md:text-7xl font-poppins"> MAKING YOUR</Typography>
+                <Typography fontWeight={600} key={curIndex} className="text-4xl md:text-6xl typing-animation">{making[curIndex].title}</Typography>
+                <Typography fontWeight={400} className="font-poppins md:w-1/2">
                     {making[curIndex].description}
                 </Typography>
 
