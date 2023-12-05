@@ -57,7 +57,7 @@ const Testimonials = () => {
                     <div className="flex flex-col text-right px-6 py-3">
                         <Typography variant="h4" fontWeight={400}>{testimonials[curIndex].name}</Typography>
                         {testimonials[curIndex].titles.map((t) =>
-                            <Typography variant="h6" className="text-secondary">{t}</Typography>
+                            <Typography variant="h6" key={t} className="text-secondary">{t}</Typography>
                         )}
                     </div>
                     <img

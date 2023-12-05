@@ -7,7 +7,24 @@ export const nav_items = [
     { label: 'Portfolio', link: 'portfolio' },
 ];
 
-export const making = ["ANDROID_APPS", "WEB_APPS", "GRAPHICS", "APIs"]
+export const making = [
+    {
+        title: "ANDROID_APPS",
+        description: "Secure the finest android app development services with us. We offer innovative solutions to expand your business and enhance its reach."
+    },
+    {
+        title: "WEB_APPS",
+        description: "Secure the finest web design and development services with us. We offer innovative solutions to expand your business and enhance its reach."
+    },
+    {
+        title: "GRAPHICS",
+        description: "Secure the finest graphics designing services with us. We offer innovative solutions to expand your business and enhance its reach."
+    },
+    {
+        title: "APIs",
+        description: "Secure the finest API development services with us. We offer innovative solutions to expand your business and enhance its reach."
+    }
+]
 
 export const service_tab_items = [
     {
@@ -89,32 +106,32 @@ export const portfolio_projects = [
 
 export const infos = [
     {
-        
-            title: "Artificial Intelligence",
-            description: "MarginTop Solutions pioneers in Artificial Intelligence (AI) services, crafting intelligent solutions through cutting-edge technologies such as machine learning, natural language processing, and computer vision.",
-            topics: [
-                {
-                    title: "Machine Learning Development",
-                    description: "Empower your business with MarginTop Solutions' expertise in machine learning development. We create intelligent algorithms, enabling machines to learn from data and perform tasks with human-like intelligence."
-                },
-                {
-                    title: "NLP Solutions",
-                    description: "Revolutionize language-based interactions with MarginTop Solutions' NLP solutions. We harness the power of Natural Language Processing to interpret, understand, and generate human-like text, optimizing communication for businesses."
-                },
-                {
-                    title: "Computer Vision Services",
-                    description: "Step into the future of visual intelligence with MarginTop Solutions. Our Computer Vision Services interpret visual data, from image recognition to autonomous vehicles, enhancing decision-making and efficiency in various applications."
-                },
-                {
-                    title: "AI Consulting and Strategy",
-                    description: "Chart your AI journey with confidence. MarginTop Solutions offers AI Consulting and Strategy services, providing expert guidance on integrating AI into your business seamlessly for strategic implementation and optimal outcomes."
-                },
-                {
-                    title: "Low Code AI Development",
-                    description: "Accelerate AI application development with MarginTop Solutions' Low Code AI Development. Our approach leverages low-code platforms for streamlined development, ensuring rapid deployment of tailored AI solutions to meet your business needs."
-                }
-            ]
-        
+
+        title: "Artificial Intelligence",
+        description: "MarginTop Solutions pioneers in Artificial Intelligence (AI) services, crafting intelligent solutions through cutting-edge technologies such as machine learning, natural language processing, and computer vision.",
+        topics: [
+            {
+                title: "Machine Learning Development",
+                description: "Empower your business with MarginTop Solutions' expertise in machine learning development. We create intelligent algorithms, enabling machines to learn from data and perform tasks with human-like intelligence."
+            },
+            {
+                title: "NLP Solutions",
+                description: "Revolutionize language-based interactions with MarginTop Solutions' NLP solutions. We harness the power of Natural Language Processing to interpret, understand, and generate human-like text, optimizing communication for businesses."
+            },
+            {
+                title: "Computer Vision Services",
+                description: "Step into the future of visual intelligence with MarginTop Solutions. Our Computer Vision Services interpret visual data, from image recognition to autonomous vehicles, enhancing decision-making and efficiency in various applications."
+            },
+            {
+                title: "AI Consulting and Strategy",
+                description: "Chart your AI journey with confidence. MarginTop Solutions offers AI Consulting and Strategy services, providing expert guidance on integrating AI into your business seamlessly for strategic implementation and optimal outcomes."
+            },
+            {
+                title: "Low Code AI Development",
+                description: "Accelerate AI application development with MarginTop Solutions' Low Code AI Development. Our approach leverages low-code platforms for streamlined development, ensuring rapid deployment of tailored AI solutions to meet your business needs."
+            }
+        ]
+
         ,
     },
     {
@@ -143,7 +160,7 @@ export const infos = [
             }
         ]
     },
-    
+
     {
         title: "IoT and Robotics",
         description: "MarginTop Solutions offers comprehensive IoT and Robotics services, including solution development, industrial automation, smart home and consumer IoT devices, IoT security solutions, and expert consulting and implementation.",
@@ -170,7 +187,7 @@ export const infos = [
             }
         ]
     }
-    
+
 ];
 
 

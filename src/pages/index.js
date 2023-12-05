@@ -6,8 +6,9 @@ export default function Home() {
   const [need, setNeed] = useState("");
   return (
     <main>
+      <img className='absolute top-0 right-0 z-[-1]' src='/wavefull.svg' alt='background' />
       <img className='absolute top-0 z-[-1] w-screen h-screen' src='/herobg.png' alt='background' />
-      <div className='min-h-screen'>
+      <div className='min-h-screen flex flex-col gap-36'>
         <NavBar />
         <Hero />
       </div>

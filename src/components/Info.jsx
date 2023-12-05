@@ -55,7 +55,7 @@ const InfoCard = ({ info, need, setNeed }) => {
                 Order A Product
             </Link>
 
-            <img src="/AI_info.png" alt="whatever" className="absolute top-0 right-0 lg:static lg:w-1/2 h-full w-full  z-[-1]" />
+            <img src="/AI_info.png" alt="whatever" className="absolute top-0 right-0 lg:static lg:w-1/2 h-cover w-full  z-[-1]" />
         </div>
     )
 };
