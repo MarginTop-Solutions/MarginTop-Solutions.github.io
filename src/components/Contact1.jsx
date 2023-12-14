@@ -33,7 +33,7 @@ const ContactPage1 = ({ need, handleNeed, ContinueButton }) => {
                 )}
             </div>
 
-            <Typography variant="body1" className="py-2">Or, tell us what you're looking for</Typography>
+            <Typography variant="body1" className="py-2">Or, tell us what you are looking for</Typography>
 
             <input
                 type="text"

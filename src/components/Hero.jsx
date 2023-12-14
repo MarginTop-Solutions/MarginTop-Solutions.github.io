@@ -6,17 +6,16 @@ import { Link } from "react-scroll";
 import { making } from "@/constants";
 import { useEffect, useState } from "react";
 
-const TypedTypography = ({ value, fontWeight, className, delay, active = true, setActive }) => {
-    if (!active) return;
+const TypedTypography = ({ value, fontWeight, className, delay, active = true, setActive = () => { } }) => {
     const [content, setContent] = useState('');
     useEffect(() => {
         let currentIndex = content.length;
         if (currentIndex >= value.length) {
-            if (setActive) setActive(true);
+            setActive(true);
             return;
         }
         const timeout = setTimeout(() => {
-            setContent(content + value[currentIndex]);
+            setContent(content + active ? value[currentIndex] : '');
         }, delay);
         return () => clearTimeout(timeout);
     });

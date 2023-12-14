@@ -158,7 +158,7 @@ const Contact = ({ need, setNeed }) => {
                         contact@margintop.com
                     </div>
                     <Typography variant="h5" className="p-16 mt-12 bg-secondary rounded-xl">
-                        Reach out and let's write the next chapter of success together.
+                        Reach out and lets write the next chapter of success together.
                     </Typography>
                 </div>
             </div>
