@@ -33,7 +33,7 @@ const ProjectsView = ({ focusedIndex, need, setNeed }) => {
             {portfolio_projects.map((proj, i) => (
                 <div
                     key={i}
-                    className={`project-${i} relative rounded-xl min-w-[100vw] lg:min-w-[50vw] ${focusedIndex != i && "scale-50"} overflow-hidden duration-1000 ease-in-out`}
+                    className={`project-${i} relative rounded-xl min-w-[90vw] lg:min-w-[50vw] ${focusedIndex != i && "scale-50"} overflow-hidden duration-1000 ease-in-out`}
                 >
                     <img src={proj.image} alt={proj.title} className={`absolute w-full h-full object-cover rounded-xl z-[-1]`} />
 

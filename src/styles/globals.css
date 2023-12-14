@@ -46,12 +46,6 @@
     }
   }
 
-  .typing-animation {
-    overflow: hidden;
-    display: inline-block;
-    animation: typing 3s steps(40, end) 1s 1 normal both;
-  }
-
   .smallCard {
     background-color: #1c6d7e22;
     color: #888;
