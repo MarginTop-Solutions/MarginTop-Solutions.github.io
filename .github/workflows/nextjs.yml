@@ -51,7 +51,7 @@ jobs:
 
       # Additional step to copy CNAME to public folder
       - name: Copy CNAME to public
-        run: cp CNAME public/
+        run: cp /public/CNAME public/
 
       - name: Restore cache
         uses: actions/cache@v2
