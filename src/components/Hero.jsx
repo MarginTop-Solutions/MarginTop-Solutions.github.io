@@ -6,16 +6,17 @@ import { Link } from "react-scroll";
 import { making } from "@/constants";
 import { useEffect, useState } from "react";
 
-const TypedTypography = ({ value, fontWeight, className, delay, active = true, setActive = () => { } }) => {
+const TypedTypography = ({ value, fontWeight, className, delay, onComplete = (_) => { } }) => {
     const [content, setContent] = useState('');
     useEffect(() => {
         let currentIndex = content.length;
         if (currentIndex >= value.length) {
-            setActive(true);
+            if (onComplete) onComplete();
             return;
         }
+
         const timeout = setTimeout(() => {
-            setContent(content + active ? value[currentIndex] : '');
+            setContent(content + value[currentIndex]);
         }, delay);
         return () => clearTimeout(timeout);
     });
@@ -48,8 +49,8 @@ const Hero = () => {
             <div className="flex-grow">
                 <Typography variant="h5">WE MADE AND WE ARE</Typography>
                 <Typography className="text-5xl md:text-7xl font-poppins"> MAKING YOUR</Typography>
-                <TypedTypography value={making[curIndex].title} fontWeight={600} key={curIndex} className="text-4xl md:text-6xl" delay={70} setActive={setActive} />
-                <TypedTypography value={making[curIndex].description} fontWeight={400} key={-(curIndex + 1)} className="font-poppins md:w-1/2" delay={20} active={active} />
+                <TypedTypography value={making[curIndex].title} fontWeight={600} key={curIndex} className="text-4xl md:text-6xl" delay={70} onComplete={() => setActive(true)} />
+                {active && <TypedTypography value={making[curIndex].description} fontWeight={400} key={-(curIndex + 1)} className="font-poppins md:w-1/2" delay={20} />}
 
                 <Link
                     to={'about'}
