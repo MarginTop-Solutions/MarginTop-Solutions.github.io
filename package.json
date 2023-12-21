@@ -7,7 +7,7 @@
     "dev": "next dev  && cp /CNAME public/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out",
-    "build": "next build && cp ./CNAME public/",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
