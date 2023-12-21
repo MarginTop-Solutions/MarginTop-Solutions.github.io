@@ -1,13 +1,13 @@
 {
   "name": "margintopsite",
-  "homepage": "https://margintopsolutions.github.io/margintopsolutions",
+  "homepage": "https://margintopsolutions.com.np",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev  && cp /CNAME public/",
+    "dev": "next dev && cp /CNAME public/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out",
-    "build": "next build",
+    "build": "next build && next export && touch ./out/.nojekyll",
     "start": "next start",
     "lint": "next lint"
   },
