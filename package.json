@@ -1,10 +1,13 @@
 {
   "name": "margintopsite",
+  "homepage": "https://margintopsolutions.github.io/margintopsolutions",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev  && cp /CNAME public/",
-    "build": "next build && cp /CNAME public/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "next build && cp ./CNAME public/",
     "start": "next start",
     "lint": "next lint"
   },
@@ -27,6 +30,7 @@
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.2",
+    "gh-pages": "^6.1.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0"
   }
