@@ -12,7 +12,7 @@ const ServiceHeader = () => (
             Break New Grounds
         </Typography>
 
-        <Typography fontWeight={800} letterSpacing={4} className="font-sans text-stroke-white text-fill-black text-7xl md:text-9xl">
+        <Typography fontWeight={800} letterSpacing={4} variant="h1" className="font-sans text-stroke-white text-fill-black">
             Services
         </Typography>
 
