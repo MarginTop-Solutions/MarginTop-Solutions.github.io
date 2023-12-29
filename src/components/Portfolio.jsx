@@ -37,7 +37,7 @@ const ProjectsView = ({ focusedIndex, need, setNeed }) => {
                 >
                     <img src={proj.image} alt={proj.title} className={`absolute w-full h-full object-cover rounded-xl z-[-1]`} />
 
-                    <div className={`relative flex flex-col gap-16 xl:w-3/5 bg-[#012a2abb] px-8 py-12 ${focusedIndex === i ? "" : "opacity-0"} duration-1000 ease-in-out`}>
+                    <div className={`relative flex flex-col gap-10 xl:w-3/5 bg-[#012a2abb] px-8 py-12 ${focusedIndex === i ? "" : "opacity-0"} duration-1000 ease-in-out`}>
                         <Typography variant="h4" fontWeight={600}>
                             {proj.title}
                         </Typography>

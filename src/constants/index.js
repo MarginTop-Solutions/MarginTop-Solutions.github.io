@@ -29,32 +29,32 @@ export const making = [
 export const service_tab_items = [
     {
         topic: "Web Development",
-        image: '/webdev.png',
+        image: '/1.png',
         description: "MarginTop Solutions excels in designing, developing, and maintaining cutting-edge websites and web applications. Our team ensures your online presence stands out with innovative solutions tailored to your unique needs."
     },
     {
         topic: "Mobile App Development",
-        image: '/webdev.png',
+        image: '/2.png',
         description: "Elevate your mobile presence with MarginTop Solutions. We specialize in designing, developing, and maintaining mobile apps that not only meet but exceed user expectations. Trust us for seamless and user-friendly experiences."
     },
     {
         topic: "Machine Learning",
-        image: '/webdev.png',
+        image: '/3.png',
         description: "Experience the power of intelligent algorithms with MarginTop Solutions. We specialize in designing, developing, and maintaining machine learning solutions that empower your business to make data-driven decisions and stay ahead in the digital landscape."
     },
     {
         topic: "Data Analysis & Visualization",
-        image: '/webdev.png',
+        image: '/6.png',
         description: "Unlock insights from your data with MarginTop Solutions. Our expertise in data analysis and visualization ensures that you gain meaningful and actionable insights, enhancing your decision-making processes."
     },
     {
         topic: "IoT and Email Automation",
-        image: '/webdev.png',
+        image: '/5.png',
         description: "Transform your business with MarginTop Solutions' expertise in IoT and Email Automation. We design, develop, and maintain solutions that seamlessly integrate the Internet of Things and streamline your email communication processes for enhanced efficiency."
     },
     {
         topic: "Graphics Design",
-        image: '/webdev.png',
+        image: '/4.png',
         description: "Make a lasting visual impact with MarginTop Solutions' Graphics Design services. Our team creates stunning visuals that captivate your audience, ensuring your brand stands out in the digital realm. Trust us for creative and compelling designs."
     }
 ];
@@ -65,37 +65,36 @@ export const portfolio_projects = [
         title: "Scrabble Logger",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "A social media dashboard application that allows users to manage and analyze their social media accounts in one central hub. Built using React and Redux for state management.",
+        description: "Tailored for Scrabble enthusiasts, Scrabble Logger is your ultimate companion for managing and enhancing your Scrabble gaming experience. With intuitive features and a user-friendly interface, it simplifies game tracking and strategy planning. Developed to elevate your Scrabble gameplay with ease.",
     },
     {
         title: "Undelievered Email Extractor",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "An expense tracker application that helps users manage their finances by tracking income, expenses, and providing insights into spending patterns. Developed with React and Firebase.",
+        description: "Designed for seamless email management, our Undelivered Email Extractor is an automated solution that effortlessly extracts undelivered emails from Outlook. This versatile program is your go-to tool for hassle-free email management, catering to clients seeking efficiency and precision in handling their email communications.",
     },
     {
         title: "Point Pressure Mobile Application",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "A fitness tracking application that allows users to log their workouts, set fitness goals, and monitor their progress over time. Built using React Native for cross-platform compatibility.",
+        description: "evolutionize your IoT experience with the Point Pressure Mobile Application. Built with Flutter, Dart, and Firebase, this versatile app serves as the gateway to seamless connectivity with IoT devices. Connecting and managing your IoT ecosystem has never been easier—log data, set preferences, and monitor device status with a user-friendly interface, putting the power of IoT control right in your hands.",
     },
     {
         title: "Logistics Service Platform",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "An expense tracker application that helps users manage their finances by tracking income, expenses, and providing insights into spending patterns. Developed with React and Firebase.",
+        description: "Revolutionizing logistics for our clients, the Logistics Service Platform offers real-time insights and seamless management. Developed with React and Firebase, and laravel it's a powerful tool for optimizing logistical operations",
     },
     {
         title: "Learning Management System",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "A social media dashboard application that allows users to manage and analyze their social media accounts in one central hub. Built using React and Redux for state management.",
-    },
+        description: "Tailored for educators and learners, our Learning Management System is a centralized hub for clients to manage and analyze social media accounts. Leveraging React and Redux, it ensures a user-friendly experience for efficient learning."},
     {
         title: "Artist Portfolio Website",
         image: '/sample.png',
         link: 'https://github.com/SunX-1224',
-        description: "A platform for sharing and discovering recipes. Users can upload their favorite recipes, explore new dishes, and engage with a community of cooking enthusiasts. Implemented with MERN stack.",
+        description: "Tailored for creative entrepreneurs, our Artist Portfolio Website is more than just a showcase—it's your personalized e-commerce platform. Developed to meet the specific needs of artists, this website, powered by the MERN stack, allows our clients to effortlessly exhibit their artistic journey, post their creations, and even sell their masterpieces. With an intuitive interface and secure transactions, it's the perfect online canvas for artists looking to share, showcase, and sell their unique works of art.",
     },
     // {
     //     title: "Travel Blog",
@@ -194,51 +193,38 @@ export const infos = [
 
 export const testimonials = [
     {
-        name: 'Jon Snow',
-        titles: ['CEO/Founder'],
-        profile: '/randomperson.png',
+        name: 'Parikshit Verma',
+        titles: ['CTO, Point Pressure'],
+        profile: '/ParikshitVerma.jpeg',
         feedback: 'Ordered my first mobile app development \
-        to ITSoft Solutions.I was inexperienced \
-        contractor but they carefully listened to \
-        my request and try to deliver the best \
-        quality of service.'
+        to PointPressue. The team delievered it perfectly\
+        on time and within budget.'
     },
     {
-        name: 'Tony Stark',
-        titles: ['CEO/Founder', 'Thanos killer'],
-        profile: '/dedman.jpeg',
-        feedback: 'We possess years of expertise in developing fully-customized \
-        web designing and development solutions. Our team of dedicated developers (a.k.a. The Avengers) \
-        has managed to set the target.'
+        name: 'Ken Lyle',
+        titles: ['CEO/Founder', 'WeddingRFP'],
+        profile: '/ken.jpeg',
+        feedback: 'Great work, great communications, and lightning fast.'
+
+        
     },
     {
-        name: 'Hank Pym',
-        titles: ['CEO (Pym Tech)'],
-        profile: '/nothankpym.jpg',
-        feedback: 'Ordered my first mobile app development \
-        to ITSoft Solutions.I was inexperienced \
-        contractor but they carefully listened to \
-        my request and try to deliver the best \
-        quality of service.'
+        name: 'Alvin',
+        titles: ['Software Engineer', 'System Canada'],
+        profile: '/alvin.png',
+        feedback: 'We worked on multiple projects with MarginTop Solutions and all ended so good. Will always be in contact with them for future works.'
     },
     {
-        name: 'Iron Man',
-        titles: ['Dead Man'],
-        profile: '/dedman.jpeg',
-        feedback: 'In creating a solid product, Plex Bit Infosystems \
-        has been our dependable ally and collaborator here in Stark Industries. Since they began \
-        working with us, they have completed this project on schedule and \
-        within their projected budget.'
+        name: 'Jesse Liula Schiceya',
+        titles: ['CEO, COO', 'PatientCare, Nikkle'],
+        profile: '/jesse.jpeg',
+        feedback: 'I have talked with multiple team before meeting MarginTop Solutions and they have literally ended up every technical headaches that I had prior. The best part is that they are smart and easy to talk.'
     },
     {
-        name: 'Jon Snow',
-        titles: ['King in the North', 'Queen killer'],
-        profile: '/randomperson.png',
-        feedback: 'Ordered my first mobile app development \
-        to ITSoft Solutions.I was inexperienced \
-        contractor but they carefully listened to \
-        my request and try to deliver the best \
-        quality of service.'
+        name: 'Rajeev',
+        titles: ['Indian Client'],
+        profile: '/rajeev.jpeg',
+        feedback: 'From this Project standpoint, Margintop Solutions was determined to support till proper output was showcased. The team was knowledgeable and available for support throughout the project.'
     },
 ];
 

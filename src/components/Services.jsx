@@ -42,14 +42,14 @@ const ServicesTab = ({ need, setNeed }) => {
             </div>
 
             <div className="flex flex-row lg:gradient-border relative">
-                <div className="flex flex-col w-full lg:w-2/3 lg:px-20 gap-6 p-4 justify-around">
+                <div className="flex flex-col w-full lg:w-2/4 lg:px-20 gap-6 p-4 justify-around">
                     <Typography fontWeight={600} className="gradient-text text-4xl lg:text-6xl">{service_tab_items[index].topic}</Typography>
                     <Typography variant="h6" >{service_tab_items[index].description}</Typography>
                     <button className={`${styles.wht_button} w-fit`} onClick={()=>setActive(true)}>Learn More</button>
                 </div>
 
                 <img
-                    className="rounded-md h-full w-full object-cover absolute z-[-1] opacity-30 md:opacity-100 md:static lg:w-1/3"
+                    className="rounded-md pt-20 pb-20 pr-10 h-full w-full object-cover absolute z-[-1] opacity-30 md:opacity-100 md:static lg:w-2/4"
                     src={service_tab_items[index].image}
                     alt={service_tab_items[index].topic}
                 />
