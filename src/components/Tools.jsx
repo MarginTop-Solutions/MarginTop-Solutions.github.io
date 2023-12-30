@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 
 const Tools = () => (
     <div className="bg-[#333b] flex flex-col gap-6 px-32 py-16" id="tools">
-        <Typography variant="h5" fontFamily={"sans"}>Tools we use</Typography>
+        <Typography variant="h3" fontFamily={"sans"} fontWeight={600} >Tools we use</Typography>
 
         <div className="flex flex-row justify-between py-6">
             {tools.map((tool, i) => (

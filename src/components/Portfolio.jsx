@@ -29,15 +29,15 @@ const ProjectsView = ({ focusedIndex, need, setNeed }) => {
 
 
     return (
-        <div ref={containerRef} className="flex flex-row items-center overflow-x-hidden w-screen">
+        <div ref={containerRef} className="flex flex-row gap-2 items-center overflow-x-hidden w-screen relative">
             {portfolio_projects.map((proj, i) => (
                 <div
                     key={i}
-                    className={`project-${i} relative rounded-xl min-w-[90vw] lg:min-w-[50vw] ${focusedIndex != i && "scale-50"} overflow-hidden duration-1000 ease-in-out`}
+                    className={`project-${i} relative rounded-xl min-w-[90vw] lg:min-w-[50vw] ${focusedIndex != i && "scale-[60%]"} overflow-hidden duration-1000 ease-in-out`}
                 >
                     <img src={proj.image} alt={proj.title} className={`absolute w-full h-full object-cover rounded-xl z-[-1]`} />
 
-                    <div className={`relative flex flex-col gap-10 xl:w-3/5 bg-[#012a2abb] px-8 py-12 ${focusedIndex === i ? "" : "opacity-0"} duration-1000 ease-in-out`}>
+                    <div className={`relative flex flex-col gap-12 xl:w-2/3 min-h-max bg-[#012a2abb] p-12 ${focusedIndex === i ? "" : "opacity-0"} duration-1000 ease-in-out`}>
                         <Typography variant="h4" fontWeight={600}>
                             {proj.title}
                         </Typography>
@@ -72,7 +72,7 @@ const Portfolio = ({ need, setNeed }) => {
             </Typography>
 
             <ProjectsView focusedIndex={focusedIndex} need={need} setNeed={setNeed} />
-            <div className="flex flex-row items-center gap-4 py-4 px-6 mt-4">
+            <div className="flex flex-row items-center gap-4 px-6 my-2">
                 <ArrowLeft onClick={() => handleScroll(-1)} />
                 {portfolio_projects.map((_, i) => <Circle key={i} strokeWidth={i === focusedIndex ? 4 : 2} />)}
                 <ArrowRight onClick={() => handleScroll(1)} />

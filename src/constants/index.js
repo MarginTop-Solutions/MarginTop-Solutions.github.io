@@ -63,8 +63,13 @@ export const service_tab_items = [
 export const portfolio_projects = [
     {
         title: "Scrabble Logger",
+<<<<<<< HEAD
         image: '/1.jpg',
         link: '#',
+=======
+        image: '/sample.png',
+        link: 'https://github.com/margintopsolutions',
+>>>>>>> refs/remotes/origin/main
         description: "Tailored for Scrabble enthusiasts, Scrabble Logger is your ultimate companion for managing and enhancing your Scrabble gaming experience. With intuitive features and a user-friendly interface, it simplifies game tracking and strategy planning. Developed to elevate your Scrabble gameplay with ease.",
     },
     {
@@ -87,9 +92,16 @@ export const portfolio_projects = [
     },
     {
         title: "Learning Management System",
+<<<<<<< HEAD
         image: '/4.jpg',
         link: '#',
         description: "Tailored for educators and learners, our Learning Management System is a centralized hub for clients to manage and analyze social media accounts. Leveraging React and Redux, it ensures a user-friendly experience for efficient learning."},
+=======
+        image: '/sample.png',
+        link: 'https://github.com/SunX-1224',
+        description: "Tailored for educators and learners, our Learning Management System is a centralized hub for clients to manage and analyze social media accounts. Leveraging React and Redux, it ensures a user-friendly experience for efficient learning."
+    },
+>>>>>>> refs/remotes/origin/main
     {
         title: "Artist Portfolio Website",
         image: '/3.jpg',
@@ -206,7 +218,7 @@ export const testimonials = [
         profile: '/ken.jpeg',
         feedback: 'Great work, great communications, and lightning fast.'
 
-        
+
     },
     {
         name: 'Alvin',
