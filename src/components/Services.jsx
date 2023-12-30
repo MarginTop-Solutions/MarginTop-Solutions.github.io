@@ -43,9 +43,9 @@ const ServicesTab = ({ need, setNeed }) => {
 
             <div className="flex flex-row lg:gradient-border relative">
                 <div className="flex flex-col w-full lg:w-2/4 lg:px-20 gap-6 p-4 justify-around">
-                    <Typography fontWeight={600} className="gradient-text text-4xl lg:text-6xl">{service_tab_items[index].topic}</Typography>
+                    <Typography fontWeight={600} variant="h4" className="gradient-text">{service_tab_items[index].topic}</Typography>
                     <Typography variant="h6" >{service_tab_items[index].description}</Typography>
-                    <button className={`${styles.wht_button} w-fit`} onClick={()=>setActive(true)}>Learn More</button>
+                    <button className={`${styles.wht_button} w-fit`} onClick={() => setActive(true)}>Learn More</button>
                 </div>
 
                 <img
