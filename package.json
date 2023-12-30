@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev && cp /CNAME public/",
+    "dev": "next dev ",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d out -t true",
-    "build": "next build && cp /CNAME public/ && touch ./out/.nojekyll",
+    "build": "next build  && touch ./out/.nojekyll",
     "start": "next start",
     "lint": "next lint"
   },
