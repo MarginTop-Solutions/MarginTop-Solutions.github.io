@@ -65,14 +65,14 @@ export const portfolio_projects = [
         title: "Scrabble Logger",
         image: '/1.jpg',
         link: '#',
-        description: "Tailored for Scrabble enthusiasts, Scrabble Logger is your ultimate companion for managing and enhancing your Scrabble gaming experience. With intuitive features and a user-friendly interface, it simplifies game tracking and strategy planning. Developed to elevate your Scrabble gameplay with ease.",
+        description: "Tailored for Scrabble enthusiasts, Scrabble Logger is your goto web-application to keep records of all the scrabble competitions you are organizing. ",
     },
-    {
-        title: "Undelievered Email Extractor",
-        image: '/sample.png',
-        link: '#',
-        description: "Designed for seamless email management, our Undelivered Email Extractor is an automated solution that effortlessly extracts undelivered emails from Outlook. This versatile program is your go-to tool for hassle-free email management, catering to clients seeking efficiency and precision in handling their email communications.",
-    },
+    // {
+    //     title: "Undelievered Email Extractor",
+    //     image: '/sample.png',
+    //     link: '#',
+    //     description: "Designed for seamless email management, our Undelivered Email Extractor is an automated solution that effortlessly extracts undelivered emails from Outlook. This versatile program is your go-to tool for hassle-free email management, catering to clients seeking efficiency and precision in handling their email communications.",
+    // },
     {
         title: "Point Pressure Mobile Application",
         image: '/2.jpg',
@@ -83,18 +83,18 @@ export const portfolio_projects = [
         title: "Logistics Service Platform",
         image: '/5.jpg',
         link: '#',
-        description: "This Logistics Service Platform offers real-time insights and seamless management. Developed with React and Firebase, and laravel it's a powerful tool for optimizing logistical operations",
+        description: "This Logistics Service Platform offers real-time insights and seamless management. Developed with React and Firebase, and laravel.",
     },
     {
         title: "Learning Management System",
         image: '/4.jpg',
         link: '#',
-        description: "Tailored for educators and learners, our Learning Management System is a centralized hub for clients to manage and analyze social media accounts. Leveraging React and Redux, it ensures a user-friendly experience for efficient learning."},
+        description: "We designed this learning management system for our client using PHP laravel, react and MYSQL."},
     {
-        title: "Artist Portfolio Website",
-        image: '/3.jpg',
+        title: "Online Certificate Generator",
+        image: '/Untitled design.jpg',
         link: '#',
-        description: "Developed to our client who wanted to sell her paintings to people. Developed with React, Django and Sqlite.",
+        description: "Developed to our client in India who wanted us to develop certificate generator just using JavaScript. We used Fabirc.JS to complete the project.",
     },
     // {
     //     title: "Travel Blog",
@@ -226,6 +226,12 @@ export const testimonials = [
         profile: '/rajeev.jpeg',
         feedback: 'From this Project standpoint, Margintop Solutions was determined to support till proper output was showcased. The team was knowledgeable and available for support throughout the project.'
     },
+    {
+        name:'Vivek',
+        titles:['Indian Client'],
+        profile: 'vivek.jpeg',
+        feedback:"Amazing and excellent work by Roshan. I highly recommend to everyone for automation of the reports. Thank you Team",
+    }
 ];
 
 export const tools = ["/mysql.png", "/js.png", "/php.png", "/react.png", "/css.png", "/wordpress.png"]
