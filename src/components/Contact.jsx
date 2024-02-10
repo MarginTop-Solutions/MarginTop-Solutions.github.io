@@ -149,13 +149,20 @@ const Contact = ({ need, setNeed }) => {
                 {getPage(page)}
 
                 <div className="flex flex-col gap-4 text-lg w-1/3">
-                    <div className="flex gap-6 hover:underline">
-                        <PhoneCall fill="white" />
-                        +977 9876543210
+                    <div className="flex flex-col gap-6 hover:underline">
+                      <div className="flex">
+                      <PhoneCall fill="white" />
+                        +977 9845926945 
+                      </div>
+                 <div className="flex">
+                 <PhoneCall fill="white" />
+                  +977 9814148108
+                 </div>
+
                     </div>
-                    <div className="flex gap-6 hover:underline">
+                    <div className="flex hover:underline">
                         <Mail className="invert" fill="#0" />
-                        contact@margintop.com
+                           hello@margintopsolutions.com
                     </div>
                     <Typography variant="h5" className="p-16 mt-12 bg-secondary rounded-xl">
                         Reach out and lets write the next chapter of success together.
