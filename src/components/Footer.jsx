@@ -21,7 +21,7 @@ const Footer = () => (
         <span className="flex flex-row gap-4">
         <Link href="tel:+9779845926945"><PhoneCallIcon width={32} height={32} /></Link>
     <Link href="mailto:hello@margintopsolutions.com.np"><Mail width={32} height={32} /></Link>
-    <Link href="tel:+97798141148108"><PhoneCallIcon width={32} height={32} /></Link>
+    <Link href="tel:+9779814148108"><PhoneCallIcon width={32} height={32} /></Link>
 
         </span>
 </div>
